@@ -5,11 +5,16 @@ Poster presentation?
 
 ## Contents
 
-1. [Project Statement and Motivation](#project-statement-and-motivation)
-2. [OQS Dynamics and Quantum Master Equations (QME)](#oqs-dynamics-and-quantum-master-equations-(qme))
-3. [Bloch Vector Representation for a 2-Level System (2LS)](bloch-vector-representation-for-a-2-Level-System-(2ls))
+1. [Purpose of Repository](#purpose-of-repository)
+2. [Project Statement, Motivation, and Abstract](#project-statement-motivation-and-abstract)
+3. [OQS Dynamics and Quantum Master Equations (QME)](#oqs-dynamics-and-quantum-master-equations-(qme))
+4. [Bloch Vector Representation for a 2-Level System (2LS)](bloch-vector-representation-for-a-2-Level-System-(2ls))
 
-## Project Statement and Motivation
+## Purpose of Repository
+
+The purpose of this github repository is to display animations. For more information, view the poster presentation.
+
+## Project Statement, Motivation, and Abstract
 
 We investigate the controllability of open quantum dynamics as modeled by the **secular approximation to the Redfield quantum master equation (QME)** with control-dependent decoherence and compare dynamics modeled by the **Lindblad QME** with constant, control-independent dissipation.
 
@@ -26,7 +31,7 @@ $$\begin{equation}
 \end{equation}
 $$
 
-where $\{ \hat{\sigma}_j \}_j$ denote the Pauli matrices and $\{ u_j \}$ are coherent controls. The 2 Hamiltonian energy levels are time-dependent, $E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}$.
+where $\{ \hat{\sigma} \}$ denote the Pauli matrices and $\{ u_j \}$ are coherent controls. The 2 Hamiltonian energy levels are time-dependent, $E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}$.
 
 The true dynamics of an open quantum system are non-Markovian. (See the *Nakajima-Zwanzig generalized quantum master equation*.) However, one can use Markovian approximations when the quantum system is weakly coupled to the environment/bath. More precisely, the Markovian approximation is valid when the timescale of the environmental fluctuations, the *correlation time*, is significantly shorter than the system relaxation timescale, $\tau_C \ll \tau_R$. The two Markovian approximations we focus on are the Lindblad QME,
 
