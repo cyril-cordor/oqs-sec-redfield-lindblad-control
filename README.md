@@ -1,4 +1,13 @@
-# Open Quantum-State Control with Control-Dependent Decoherence
+# <font size=6>Open Quantum-State Control with Control-Dependent Decoherence</font>
+
+**Contributing Authors:** Cyril Morluyan Cordor, Anthony Bloch, Eitan Geva
+Poster presentation?
+
+## Contents
+
+1. [Project Statement and Motivation](#project-statement-and-motivation)
+2. [OQS Dynamics and Quantum Master Equations (QME)](#oqs-dynamics-and-quantum-master-equations-(qme))
+3. [Bloch Vector Representation for a 2-Level System (2LS)](bloch-vector-representation-for-a-2-Level-System-(2ls))
 
 ## Project Statement and Motivation
 
@@ -10,7 +19,16 @@ We investigate the controllability of open quantum dynamics as modeled by the **
 
 ## OQS Dynamics and Quantum Master Equations (QME)
 
-The true dynamics of an open quantum system are non-Markovian and can be modeled by the *Nakajima-Zwanzig generalized quantum master equation* (NZ-GQME), a first-order, integro-differential equation \cite{nakajima,zwanzig}. In general, obtaining exact solutions to the NZ-GQME is not tractable, even numerically. However, in many practical applications, the quantum system is weakly coupled to the environment/bath, and so one can approximate the system's dynamics as Markovian. More precisely, the Markovian approximation is valid when the timescale of the environmental fluctuations, the *correlation time*, is significantly shorter than the system relaxation timescale, $\tau_C \ll \tau_R$. The two Markovian approximations we focus on are the Lindblad QME,
+An open quantum system $S$ coupled with its environment/bath $B$ is represented by a *Hermitian*, *positive-semidefinite* density operator $\hat{\rho} \in \mathcal{L}(\mathbf{H})$ with *unity trace* over a Hilbert space $\textbf{H} = \mathbf{H}_S \otimes \mathbf{H}_B$. For a 2-level system (2LS) (or a qubit), a system density operator $\hat{\rho}_S \in \mathcal{L}(\mathbf{H}_S) \cong \mathbb{C}^{2\times 2}$ and system Hamiltonian $\hat{H}_S$ can be written as
+
+$$\begin{equation}
+    \hat{\rho}_S(t) = \frac{1}{2} I_2 + \frac{1}{2} \sum_{j=1}^3 n_j(t) \hat{\sigma}_j, \quad \hat{H}_S(t) = \frac{\hslash}{2} \sum_{j=1}^3 u_j(t) \hat{\sigma}_j, \qquad n_j(t), u_j(t) \in \R,
+\end{equation}
+$$
+
+where $\{ \hat{\sigma}_j \}_j$ denote the Pauli matrices and $\{ u_j \}$ are coherent controls. The 2 Hamiltonian energy levels are time-dependent, $E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}$.
+
+The true dynamics of an open quantum system are non-Markovian. (See the *Nakajima-Zwanzig generalized quantum master equation*.) However, one can use Markovian approximations when the quantum system is weakly coupled to the environment/bath. More precisely, the Markovian approximation is valid when the timescale of the environmental fluctuations, the *correlation time*, is significantly shorter than the system relaxation timescale, $\tau_C \ll \tau_R$. The two Markovian approximations we focus on are the Lindblad QME,
 
 $$\begin{equation}
     \frac{d}{dt} \hat{\rho}(t) = -\frac{i}{\hslash} [\hat{H}(t),\hat{\rho}(t)] + \sum_{j=1}^N \gamma_j \left(\hat{L}_j \hat{\rho}(t) \hat{L}_j^\dagger - \frac{1}{2}
@@ -23,3 +41,7 @@ $$\begin{align}
 	\frac{d}{dt} \rho_{jk}(t) = -i \omega_{jk} \rho_{jk}(t) &- \frac{1}{2\hslash^2} \sum_{\ell=1}^d \rho_{jk}(t) \big(\check{\kappa}_{j\ell,\ell j}(\omega_{j\ell}) + \check{\kappa}_{k\ell,\ell k}(-\omega_{\ell k})\big) \\
 	&+ \frac{\delta_{jk}}{\hslash^2} \sum_{\ell=1}^d \rho_{\ell\ell}(t) \check{\kappa}_{\ell j,j\ell}(\omega_{\ell j}), \quad j,k \in \{1,\ldots,d\} \notag
 \end{align}$$
+
+## Bloch Vector Representation for a 2-Level System (2LS)
+
+For a 2LS, there's a bijective correspondence between the set of density operators $\mathcal{D}(\mathbf{H}_S)$ and the closed unit ball $\mathbb{B} \subset \mathbb{R}^3$ by taking the "traceless components" of BLANK.
