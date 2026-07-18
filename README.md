@@ -9,9 +9,9 @@ Poster presentation?
 ## Contents
 
 1. [Purpose of Repository](#purpose-of-repository)
-2. [Project Statement, Motivation, and Abstract](#project-statement-motivation-and-abstract)
-3. [OQS Dynamics and Quantum Master Equations (QME)](#oqs-dynamics-and-quantum-master-equations-(qme))
-4. [Bloch Vector Representation for a 2-Level System (2LS)](bloch-vector-representation-for-a-2-Level-System-(2ls))
+2. [Motivation and Abstract](#motivation-and-abstract)
+3. [OQS Dynamics and Quantum Master Equations (QME)](#oqs-dynamics-and-quantum-master-equations-qme)
+4. [Bloch Vector Representation for a 2-Level System (2LS)](bloch-vector-representation-for-a-2-Level-System-2ls)
 5. [Animations](#animations)
 6. [MATLAB Code](#matlab-code)
 
