@@ -10,10 +10,11 @@ We investigate the controllability of open quantum dynamics as modeled by the **
 
 ## OQS Dynamics and Quantum Master Equations (QME)
 
-The true dynamics of an open quantum system are non-Markovian and can be modeled by the *Nakajima-Zwanzig generalized quantum master equation* (NZ-GQME), a first-order, integro-differential equation \cite{nakajima,zwanzig}. In general, obtaining exact solutions to the NZ-GQME is not tractable, even numerically. However, in many practical applications, the quantum system is weakly coupled to the environment/bath, and so one can approximate the system's dynamics as Markovian. More precisely, the Markovian approximation is valid when the timescale of the environmental fluctuations, the *correlation time*, is significantly shorter than the system relaxation timescale, $\tau_{_C} \ll \tau_{_R}$. The two Markovian approximations we focus on are the Lindblad QME,
+The true dynamics of an open quantum system are non-Markovian and can be modeled by the *Nakajima-Zwanzig generalized quantum master equation* (NZ-GQME), a first-order, integro-differential equation \cite{nakajima,zwanzig}. In general, obtaining exact solutions to the NZ-GQME is not tractable, even numerically. However, in many practical applications, the quantum system is weakly coupled to the environment/bath, and so one can approximate the system's dynamics as Markovian. More precisely, the Markovian approximation is valid when the timescale of the environmental fluctuations, the *correlation time*, is significantly shorter than the system relaxation timescale, $\tau_C \ll \tau_R$. The two Markovian approximations we focus on are the Lindblad QME,
 
 $$\begin{equation}
-    \frac{d}{dt} \hat{\rho}(t) = -\frac{i}{\hslash} [\hat{H}(t),\hat{\rho}(t)] + \sum_{j=1}^N \gamma_j \left(\hat{L}_j \hat{\rho}(t) \hat{L}_j^\dagger - \frac{1}{2} \left\{\hat{L}_j^\dagger \hat{L}_j, \hat{\rho}(t)\right\}\right), \quad N \leq d = \dim(\mathbf{Hbold}_S),
+    \frac{d}{dt} \hat{\rho}(t) = -\frac{i}{\hslash} [\hat{H}(t),\hat{\rho}(t)] + \sum_{j=1}^N \gamma_j \left(\hat{L}_j \hat{\rho}(t) \hat{L}_j^\dagger - \frac{1}{2}
+	\{\hat{L}_j^\dagger \hat{L}_j, \hat{\rho}(t)\}\right), \quad N \leq d = \dim(\mathbf{H}_S),
 \end{equation}$$
 
 and the secular approximation to the Redfield QME,
