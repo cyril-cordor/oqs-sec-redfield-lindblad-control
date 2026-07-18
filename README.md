@@ -11,7 +11,7 @@ Poster presentation?
 1. [Purpose of Repository](#purpose-of-repository)
 2. [Motivation and Abstract](#motivation-and-abstract)
 3. [OQS Dynamics and Quantum Master Equations (QME)](#oqs-dynamics-and-quantum-master-equations-qme)
-4. [Bloch Vector Representation for a 2-Level System (2LS)](bloch-vector-representation-for-a-2-Level-System-2ls)
+4. [Bloch Vector Representation for a 2-Level System (2LS)](bloch-vector-representation-for-a-2-level-system-2ls)
 5. [Animations](#animations)
 6. [MATLAB Code](#matlab-code)
 
