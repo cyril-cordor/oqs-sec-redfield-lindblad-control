@@ -8,16 +8,18 @@ Poster presentation?
 
 ## Contents
 
-1. [Purpose of Repository](#purpose-of-repository)
+1. [Project Statement and Purpose of Repository](#project-statement-and-purpose-of-repository)
 2. [Motivation and Abstract](#motivation-and-abstract)
 3. [OQS Dynamics and Quantum Master Equations (QME)](#oqs-dynamics-and-quantum-master-equations-qme)
 4. [Bloch Vector Representation for a 2-Level System (2LS)](bloch-vector-representation-for-a-2-level-system-2ls)
 5. [Animations](#animations)
 6. [MATLAB Code](#matlab-code)
 
-## Purpose of Repository
+## Project Statement and Purpose of Repository
 
-The main purpose of this github repository is to display animations to accompany the work/poster/blah. For more information, view the poster presentation.
+This project investigates mathematically the controllability of open quantum dynamics as modeled by the **secular approximation to the Redfield quantum master equation (QME)** with control-dependent decoherence and compare dynamics modeled by the **Lindblad quantum master equation** with constant, control-independent dissipation.
+
+The purpose of this github repository is to display time-evolving animations of the Lindblad- and Redfield-Bloch dynamics that appear on the poster presentation (and in a future arxiv post). We give a quick introduction to the parameters of the project.
 
 ## Motivation and Abstract
 
@@ -25,7 +27,11 @@ The main purpose of this github repository is to display animations to accompany
 
 **Abstract.** The challenge in controlling open quantum systems is that the environment causes *quantum decoherence* which arises from the entanglement of the system with the typically large number of environmental degrees of freedom. The true dynamics of an open quantum system are non-Markovian, but Markovian approximations such as the **Lindblad and Redfield quantum master equations** can be employed if the system is weakly coupled to the environment. Due to ease of use, the Lindblad master equation is a popular choice to model decoherence with the dissipation terms taken to be constant and/or independent of coherent, Hamiltonian controls. However, we argue that dissipation must be *control-dependent*. In particular, for a thermal bath environment, the system Hamiltonian continuously "informs" the bath-induced, irreversible processes, because the system wants to reach its thermal equilibrated state, *i.e.* its Gibbs state $e^{-\beta {\hat{H}}_S}/\text{Tr}[e^{-\beta{\hat{H}_S}}]$, which is dependent on the system Hamiltonian and consequently the coherent controls. In this project, we investigate mathematically the differences in how the secular Redfield QME&mdash;an equivalent formulation to Lindblad-&mdash;with control-dependent dissipation and the Lindblad QME with constant, control-independent dissipation model open system dynamics. We show that Redfield dynamics are not just thermodynamically more consistent, but reveal that Hamiltonian controls may wield a greater degree of influence on the dynamics than predicted by Lindblad with constant, control-independent dissipation.
 
-## OQS Dynamics and Quantum Master Equations (QME)
+## Open Quantum System and Bloch Ball Dynamics Refresher
+
+Recall that an open quantum system is represented by a Hermitian, positive-semidefinite, density operator $\hat{\rho} \in \mathcal{L}(\mathbf{H})$ with unital trace over a Hilbert space $\mathbf{H}$. Let $S$ stand for the *reduced system* or system of interest and $B$ for the environment or heat bath. The density operator of the composite system, system plus bath, lives in the Hilbert space product $\mathbf{H} = \mathbf{H}_S \otimes \mathbf{H}_B$ where $\mathbf{H}_S$ is the quantum state Hilbert space for the system of interest and $\mathbf{H}_B$ is for that of the bath. The dynamics of the composite system are assumed closed, but by taking a partial trace over the bath degrees of freedom, we can derive equations of motion for the reduced system density operator $\hat{\rho}$
+
+For a more detailed introduction to OQS dynamics see [^1] (and also later a paper on arxiv).
 
 An open quantum system $S$ coupled with its environment/bath $B$ is represented by a *Hermitian*, *positive-semidefinite* density operator $\hat{\rho} \in \mathcal{L}(\mathbf{H})$ with *unity trace* over a Hilbert space $\textbf{H} = \mathbf{H}_S \otimes \mathbf{H}_B$. For a 2-level system (2LS) (or a qubit), a system density operator $\hat{\rho}_S \in \mathcal{L}(\mathbf{H}_S) \cong \mathbb{C}^{2\times 2}$ and system Hamiltonian $\hat{H}_S$ can be written as
 
@@ -83,7 +89,11 @@ $$
 \end{align}
 $$
 
+[^1]: Breuer and Petructione. The Theory of Open Quantum Systems.
+
 ## Animations
+
+*Coming soon!*
 
 ### Piecewise constant control steering trajectory in the Bloch ball
 
