@@ -103,7 +103,7 @@ where $\chi_{_A}\colon [0,\infty) \to \\{0,1\\}$ is the indicator function on th
 
 *Components (in energy eigenbasis) vs. Time*
 
-https://github.com/user-attachments/assets/bdf18292-c2e4-44f3-b2c1-802a15d1643a
+<video src="https://github.com/user-attachments/assets/bdf18292-c2e4-44f3-b2c1-802a15d1643a" controls width=800></video>
 
 *Bloch ball trajectory*
 
