@@ -81,31 +81,23 @@ We should note that the Redfield QME is valid in the eigenbasis of the Hamiltoni
 
 ## Animations
 
-*Coming soon!*
 
 ### Piecewise constant control steering trajectory in the Bloch ball
 
 
 **Redfield**
 
-Components (in energy eigenbasis) vs. Time
-
-<p align="center">
-<img src="https://drive.usercontent.google.com/download?id=1s7BZ-LhQthuiCBcCaCqzV7_pN2NcVqsi" />
-</p>
+[Components (in energy eigenbasis) vs. Time](https://drive.google.com/file/d/1s7BZ-LhQthuiCBcCaCqzV7_pN2NcVqsi/view?usp=drive_link)
 
 
-Bloch Ball
 
-<p align="center">
-<img src="https://drive.usercontent.google.com/download?id=1s7BZ-LhQthuiCBcCaCqzV7_pN2NcVqsi" />
-</p>
-
-
+[Bloch Ball Dynamics](https://drive.google.com/file/d/1siKaFvoEJ3ZlyMDAQ48jkJPox5gG1-ml/view?usp=drive_link)
 
 
 
 
 ## MATLAB Code
+
+**Coming soon!**
 
 
