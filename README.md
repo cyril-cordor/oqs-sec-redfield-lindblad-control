@@ -92,9 +92,9 @@ Components (in energy eigenbasis) vs. Time
 
 
 Bloch Ball Dynamics
-<p align="center" width="100%">
-<video src="animations/ellipsoid_animation_Redfield.mp4" width="100%" controls></video>
-</p>
+https://github.com/user-attachments/assets/f937ce60-6533-4cc9-ba22-489a8e58dde9
+
+
 
 
 
