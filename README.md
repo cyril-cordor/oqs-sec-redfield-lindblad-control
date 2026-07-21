@@ -35,11 +35,11 @@ For a more detailed introduction to the project see the poster presentation (and
 
 Recall that an open quantum system is represented by a Hermitian, positive-semidefinite, density operator $\hat{\rho} \in \mathcal{L}(\mathbf{H})$ with unital trace over a Hilbert space $\mathbf{H}$. Let $S$ stand for the *reduced system* or system of interest and $B$ for the environment or heat bath. The density operator of the composite system, system plus bath, lives in the Hilbert space product $\mathbf{H} = \mathbf{H}_S \otimes \mathbf{H}_B$ where $\mathbf{H}_S$ is the quantum state Hilbert space for the system of interest and $\mathbf{H}_B$ is for that of the bath. The dynamics of the composite system are assumed closed, but by taking a partial trace $\text{Tr}_B$ over the bath degrees of freedom, we can derive equations of motion for the reduced system density operator $\hat{\rho}$. The secular Redfield and Lindblad QMEs are Markovian approximations to the OQS dynamics. This approximation is valid for weak system-bath coupling and when the timescale of the bath fluctuations, the correlation time, is significantly shorter than the system relaxation time, *i.e.* $\tau_C \ll \tau_R$.
 
-For a two-level system (2LS) (or qubit), there's a bijective correspondence between the set of density operators $\mathcal{D}(\mathbf{H}_S)$ and the closed unit ball $\mathbb{B} \subset \mathbb{R}^3$, called the **Bloch ball**. A system density operator $\hat{\rho}_S \in \mathcal{L}(\mathbf{H}_S) \cong \mathbb{C}^{2\times 2}$ and system Hamiltonian $\hat{H}_S$ can be written as
+For a two-level system (2LS) (or qubit), there's a bijective correspondence between the set of density operators $\mathcal{D}(\mathbf{H}_S)$ and the closed unit ball $\text{𝔹} \subset \text{ℝ}^3$, called the **Bloch ball**. A system density operator $\hat{\rho}_S \in \mathcal{L}(\mathbf{H}_S) \cong \text{ℂ}^{2\times 2}$ and system Hamiltonian $\hat{H}_S$ can be written as
 
 $$
 \begin{equation}
-    \hat{\rho}_S(t) = \frac{1}{2} I_2 + \frac{1}{2} \sum_{j=1}^3 n_j(t) \hat{\sigma}_j, \qquad \hat{H}_S(t) = \frac{\hslash}{2} \sum_{j=1}^3 u_j(t) \hat{\sigma}_j, \qquad n_j(t), u_j(t) \in \mathbb{R},
+    \hat{\rho}_S(t) = \frac{1}{2} I_2 + \frac{1}{2} \sum_{j=1}^3 n_j(t) \hat{\sigma}_j, \qquad \hat{H}_S(t) = \frac{\hslash}{2} \sum_{j=1}^3 u_j(t) \hat{\sigma}_j, \qquad n_j(t), u_j(t) \in \text{ℝ},
 \end{equation}
 $$
 
