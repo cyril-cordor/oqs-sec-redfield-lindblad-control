@@ -43,7 +43,7 @@ $$
 \end{equation}
 $$
 
-where $\\{\hat{\sigma_j}\\}_j$ denote the Pauli matrices and $\\{u_j\\}j$ are coherent controls. The 2 Hamiltonian energy levels are time-dependent, $E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}$.
+where $\\{\hat{\sigma_j}\\}j$ denote the Pauli matrices and $\\{u_j\\}j$ are coherent controls. The 2 Hamiltonian energy levels are time-dependent, $E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}$.
 
 
 For simplicity, we choose the dissipation to be **pure dephasing**, and this leads to the Markovian QMEs for the Bloch ball:
@@ -91,15 +91,15 @@ We should note that the Redfield QME is valid in the eigenbasis of the Hamiltoni
 Components (in energy eigenbasis) vs. Time
 
 <p align="center">
-<img src="animations/component_animation.gif" />
+<img src="https://drive.usercontent.google.com/download?id=1s7BZ-LhQthuiCBcCaCqzV7_pN2NcVqsi" />
 </p>
+
 
 Bloch Ball
 
 <p align="center">
-<img src="https://drive.google.com/file/d/1s7BZ-LhQthuiCBcCaCqzV7_pN2NcVqsi/view?usp=drive_link" />
+<img src="https://drive.usercontent.google.com/download?id=1s7BZ-LhQthuiCBcCaCqzV7_pN2NcVqsi" />
 </p>
-
 
 
 
