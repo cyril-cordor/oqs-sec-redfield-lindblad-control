@@ -33,17 +33,17 @@ The purpose of this github repository is to display time-evolving animations of 
 
 For a more detailed introduction to the project see the poster presentation (and eventually an upcoming arxiv preprint) or for OQS dynamics in general see [^1].
 
-Recall that an open quantum system is represented by a Hermitian, positive-semidefinite, density operator $\hat{\rho} \in \mathcal{L}(\mathbf{H})$ with unital trace over a Hilbert space $\mathbf{H}$. Let $S$ stand for the *reduced system* or system of interest and $B$ for the environment or heat bath. The density operator of the composite system, system plus bath, lives in the Hilbert space product $\mathbf{H} = \mathbf{H}_S \otimes \mathbf{H}_B$ where $\mathbf{H}_S$ is the quantum state Hilbert space for the system of interest and $\mathbf{H}_B$ is for that of the bath. The dynamics of the composite system are assumed closed, but by taking a partial trace $\text{Tr}_B$ over the bath degrees of freedom, we can derive equations of motion for the reduced system density operator $\hat{\rho}$. The secular Redfield and Lindblad QMEs are Markovian approximations to the OQS dynamics. This approximation is valid for weak system-bath coupling and when the timescale of the bath fluctuations, the correlation time, is significantly shorter than the system relaxation time, *i.e.* $\tau_{_C} \ll \tau_{_R}$.
+Recall that an open quantum system is represented by a Hermitian, positive-semidefinite, density operator $\hat{\rho} \in \mathcal{L}(\mathbf{H})$ with unital trace over a Hilbert space $\mathbf{H}$. Let $S$ stand for the *reduced system* or system of interest and $B$ for the environment or heat bath. The density operator of the composite system, system plus bath, lives in the Hilbert space product $\mathbf{H} = \mathbf{H}_S \otimes \mathbf{H}_B$ where $\mathbf{H}_S$ is the quantum state Hilbert space for the system of interest and $\mathbf{H}_B$ is for that of the bath. The dynamics of the composite system are assumed closed, but by taking a partial trace $\text{Tr}_B$ over the bath degrees of freedom, we can derive equations of motion for the reduced system density operator $\hat{\rho}$. The secular Redfield and Lindblad QMEs are Markovian approximations to the OQS dynamics. This approximation is valid for weak system-bath coupling and when the timescale of the bath fluctuations, the correlation time, is significantly shorter than the system relaxation time, *i.e.* $\tau_C \ll \tau_R$.
 
 For a two-level system (2LS) (or qubit), there's a bijective correspondence between the set of density operators $\mathcal{D}(\mathbf{H}_S)$ and the closed unit ball $\mathbb{B} \subset \mathbb{R}^3$, called the **Bloch ball**. A system density operator $\hat{\rho}_S \in \mathcal{L}(\mathbf{H}_S) \cong \mathbb{C}^{2\times 2}$ and system Hamiltonian $\hat{H}_S$ can be written as
 
 $$
 \begin{equation}
-    \hat{\rho}_S(t) = \frac{1}{2} I_2 + \frac{1}{2} \sum_{j=1}^3 n_j(t) \hat{\sigma}_j, \quad \hat{H}_S(t) = \frac{\hslash}{2} \sum_{j=1}^3 u_j(t) \hat{\sigma}_j, \qquad n_j(t), u_j(t) \in \R,
+    \hat{\rho}_S(t) = \frac{1}{2} I_2 + \frac{1}{2} \sum_{j=1}^3 n_j(t) \hat{\sigma}_j, \qquad \hat{H}_S(t) = \frac{\hslash}{2} \sum_{j=1}^3 u_j(t) \hat{\sigma}_j, \qquad n_j(t), u_j(t) \in \mathbb{R},
 \end{equation}
 $$
 
-where $\\{\hat{\sigma_j}j\\}$ denote the Pauli matrices and $\\{u_j\\}j$ are coherent controls. The 2 Hamiltonian energy levels are time-dependent, $E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}$.
+where $\\{\hat{\sigma_j}\\}_j$ denote the Pauli matrices and $\\{u_j\\}j$ are coherent controls. The 2 Hamiltonian energy levels are time-dependent, $E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}$.
 
 
 For simplicity, we choose the dissipation to be **pure dephasing**, and this leads to the Markovian QMEs for the Bloch ball:
@@ -70,9 +70,11 @@ $$
 \begin{align}
 	\Omega(t) &:= \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2} \\
 	K_{a,m} &:= (1 \pm e^{-\beta\Omega(t)}) \frac{u_1(t)^2 + u_2(t)^2}{\Omega(t)^2} {\check{\kappa}}_{+-,-+}(\Omega(t)) \\
-	D(t) &:= \frac{u_3(t)^2}{\Omega(t)^2} {\check{\kappa}}_{--,--}(0)
+	D(t) &:= \frac{u_3(t)^2}{\Omega(t)^2} {\check{\kappa}}_{--,--}(0).
 \end{align}
 $$
+
+We should note that the Redfield QME is valid in the eigenbasis of the Hamiltonian $\hat{H}_S$. When diagonalized, the Hamiltonian in this case has the form $\hat{H}_S = -\frac{\hslash}{2} \hat{\sigma}_3$, and so dynamics are centered about the $z$-axis since the Hamiltonian diagonalized is stationary at the $z$-axis. Below, the trajectories are converted back to the standard basis, so that the changes in the Hamiltonian control vector is explicitly seen.
 
 [^1]: H.P. Breuer and F. Petruccione. The Theory of Open Quantum Systems. Oxford University Press, New York, NY, 2002.
 
@@ -83,15 +85,25 @@ $$
 
 ### Piecewise constant control steering trajectory in the Bloch ball
 
-Lindblad				Redfield
+
+**Redfield**
+
+Components (in energy eigenbasis) vs. Time
+
+<p align="center">
+<img src="animations/component_animation.gif" />
+</p>
+
+Bloch Ball
+
+<p align="center">
+<img src="https://drive.google.com/file/d/1s7BZ-LhQthuiCBcCaCqzV7_pN2NcVqsi/view?usp=drive_link" />
+</p>
 
 
 
-### Chimney/Ellipsoids
 
-Lindblad				Redfield
 
-### Blah 3
 
 
 ## MATLAB Code
