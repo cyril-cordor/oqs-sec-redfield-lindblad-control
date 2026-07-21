@@ -43,7 +43,7 @@ $$
 \end{equation}
 $$
 
-where $\\{\hat{\sigma_j}\\}j$ denote the Pauli matrices and $\\{u_j\\}j$ are coherent controls. The 2 Hamiltonian energy levels are time-dependent, $E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}$.
+where $\\{\hat{\sigma_j}\\}$ denote the Pauli matrices and $\\{u_j\\}$ are coherent controls. The two Hamiltonian energy levels are time-dependent, $E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}$.
 
 
 For simplicity, we choose the dissipation to be **pure dephasing**, and this leads to the Markovian QMEs for the Bloch ball:
@@ -52,7 +52,7 @@ For simplicity, we choose the dissipation to be **pure dephasing**, and this lea
 
 $$
 \begin{equation}
-    \frac{d}{dt} \mathbf{n}(t) = \mathbf{h}(t) \times \mathbf{n}(t) + (A - \text{Tr}[A]I_3)\mathbf{n}(t) + \mathbf{b}, \quad A \in \mathbb{R}^{3\times 3}, \, \mathbf{b} \in \mathbb{R}^3
+    \frac{d}{dt} \mathbf{n}(t) = \mathbf{h}(t) \times \mathbf{n}(t) + (A - \text{Tr}[A]I_3)\mathbf{n}(t) + \mathbf{b}, \quad A \in \mathbb{R}^{3\times 3}, \mathbf{b} \in \mathbb{R}^3
 \end{equation}
 $$
 
@@ -74,7 +74,7 @@ $$
 \end{align}
 $$
 
-We should note that the Redfield QME is valid in the eigenbasis of the Hamiltonian $\hat{H}_S$. When diagonalized, the Hamiltonian in this case has the form $\hat{H}_S = -\frac{\hslash}{2} \hat{\sigma}_3$, and so dynamics are centered about the $z$-axis since the Hamiltonian diagonalized is stationary at the $z$-axis. Below, the trajectories are converted back to the standard basis, so that the changes in the Hamiltonian control vector is explicitly seen.
+We should note that the Redfield QME is valid in the eigenbasis of the Hamiltonian $\hat{H}_S$. When diagonalized, the Hamiltonian in this case has the form $\hat{H}_S = -\frac{\hslash}{2} \Omega(t) \hat{\sigma}_3$, and so dynamics are centered about the $z$-axis since the Hamiltonian diagonalized is stationary at the $z$-axis. Below, the trajectories are converted back to the standard basis, so that the changes in the Hamiltonian control vector is explicitly seen.
 
 [^1]: H.P. Breuer and F. Petruccione. The Theory of Open Quantum Systems. Oxford University Press, New York, NY, 2002.
 
