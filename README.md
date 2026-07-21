@@ -6,8 +6,8 @@
 
 Current deliverables:
 
--[Poster presentation](oqs-sec-redfield-lindblad-control-poster.pdf)
--*upcoming arxiv preprint*
+- [Poster presentation](oqs-sec-redfield-lindblad-control-poster.pdf)
+- *upcoming arxiv preprint*
 
 ## Contents
 
