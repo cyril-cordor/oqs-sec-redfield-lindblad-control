@@ -87,12 +87,14 @@ We should note that the Redfield QME is valid in the eigenbasis of the Hamiltoni
 
 **Redfield**
 
-[Components (in energy eigenbasis) vs. Time](https://drive.google.com/file/d/1s7BZ-LhQthuiCBcCaCqzV7_pN2NcVqsi/view?usp=drive_link)
+Components (in energy eigenbasis) vs. Time
 
 
 
-[Bloch Ball Dynamics](https://drive.google.com/file/d/1siKaFvoEJ3ZlyMDAQ48jkJPox5gG1-ml/view?usp=drive_link)
-
+Bloch Ball Dynamics
+<p align="center" width="100%">
+<video src="animations/ellipsoid_animation_Redfield.mp4" width="100%" controls></video>
+</p>
 
 
 
