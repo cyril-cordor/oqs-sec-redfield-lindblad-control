@@ -13,16 +13,15 @@ Current deliverables:
 
 1. [Project Statement and Purpose of Repository](#project-statement-and-purpose-of-repository)
 2. [Motivation and Abstract](#motivation-and-abstract)
-3. [OQS Dynamics and Quantum Master Equations (QME)](#oqs-dynamics-and-quantum-master-equations-qme)
-4. [Bloch Vector Representation for a 2-Level System (2LS)](bloch-vector-representation-for-a-2-level-system-2ls)
-5. [Animations](#animations)
-6. [MATLAB Code](#matlab-code)
+3. [Open Quantum System and Bloch Ball Dynamics Refresher](#open-quantum-system-and-bloch-ball-dynamics-refresher)
+4. [Animations](#animations)
+5. [MATLAB Code](#matlab-code)
 
 ## Project Statement and Purpose of Repository
 
 This project investigates mathematically the controllability of open quantum dynamics as modeled by the **secular approximation to the Redfield quantum master equation (QME)** with control-dependent decoherence and compare dynamics modeled by the **Lindblad quantum master equation** with constant, control-independent dissipation.
 
-The purpose of this github repository is to display time-evolving animations of the Lindblad- and Redfield-Bloch dynamics that appear on the poster presentation (and in a future arxiv post). We give a quick introduction to the parameters of the project.
+The main purpose of this github repository is to display the time-evolving dynamics as animations of the Lindblad- and Redfield-Bloch dynamics that appear on the poster presentation (and in a future arxiv post). We also give a quick introduction to the parameters of the project.
 
 ## Motivation and Abstract
 
