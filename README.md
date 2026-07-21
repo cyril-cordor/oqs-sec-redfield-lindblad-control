@@ -107,6 +107,10 @@ https://github.com/user-attachments/assets/bdf18292-c2e4-44f3-b2c1-802a15d1643a
 
 *Bloch ball trajectory*
 
+https://github.com/user-attachments/assets/1bee82a5-6c3d-4667-8eaa-e7dd183ced6a
+
+
+
 ### Redfield-Bloch with Purity Chimneys
 https://github.com/user-attachments/assets/f937ce60-6533-4cc9-ba22-489a8e58dde9
 
