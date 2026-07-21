@@ -70,26 +70,35 @@ $$
 \begin{align}
 	\Omega(t) &:= \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2} \\
 	K_{a,m} &:= (1 \pm e^{-\beta\Omega(t)}) \frac{u_1(t)^2 + u_2(t)^2}{\Omega(t)^2} {\check{\kappa}}_{+-,-+}(\Omega(t)) \\
-	D(t) &:= \frac{u_3(t)^2}{\Omega(t)^2} {\check{\kappa}}_{--,--}(0).
+	D(t) &:= \frac{u_3(t)^2}{\Omega(t)^2} {\check{\kappa}}_{--,--}(0),
 \end{align}
 $$
 
-We should note that the Redfield QME is valid in the eigenbasis of the Hamiltonian $\hat{H}_S$. When diagonalized, the Hamiltonian in this case has the form $\hat{H}_S = -\frac{\hslash}{2} \Omega(t) \hat{\sigma}_3$, and so dynamics are centered about the $z$-axis since the Hamiltonian diagonalized is stationary at the $z$-axis. Below, the trajectories are converted back to the standard basis, so that the changes in the Hamiltonian control vector is explicitly seen.
+where $-,+$ indicate ground and excited state indices, respectively. We should note that the Redfield QME is valid in the eigenbasis of the Hamiltonian $\hat{H}_S$. When diagonalized, the Hamiltonian in this case has the form $\hat{H}_S(t) = -\frac{\hslash}{2} \Omega(t) \hat{\sigma}_3$, and so dynamics are centered about the $z$-axis since the Hamiltonian diagonalized is stationary at the $z$-axis. Below, the trajectories are converted back to the standard basis, so that the changes in the Hamiltonian control vector is explicitly seen.
 
-[^1]: H.P. Breuer and F. Petruccione. The Theory of Open Quantum Systems. Oxford University Press, New York, NY, 2002.
 
 
 ## Animations
 
+The Hamiltonian controls $\mathbf{h}(t) = (u_1(t),u_2(t),u_3(t))$ chosen are the following piecewise constant functions,
 
-### Piecewise constant control steering trajectory in the Bloch ball
+$$
+\begin{align*}
+	u_1(t) &= -8 \chi_{(15,30])(t) + 2 \chi_{(30,45]}(t) - \frac{3}{4} \chi_{(45,\infty)}(t) \\
+	u_2(t) &= -5 \chi_{[0,15))(t) - 5 \chi_{(30,45]}(t) - \frac{3}{4} \chi_{(45,\infty)}(t) \\
+	u_3(t) &= -10 \chi_{(30,\infty)}(t),
+\end{align*}
+$$
 
+where $\chi_{_A}\colon [0,\infty) \to \{0,1\}$ is the indicator function for the set $A \subset [0,\infty)$.
+
+### Steering trajectory in the Bloch ball
+
+**Lindblad**
 
 **Redfield**
 
-Components (in energy eigenbasis) vs. Time
-
-
+[Components (in energy eigenbasis) vs. Time](animations/component_animation.gif)
 
 Bloch Ball Dynamics
 https://github.com/user-attachments/assets/f937ce60-6533-4cc9-ba22-489a8e58dde9
@@ -102,4 +111,6 @@ https://github.com/user-attachments/assets/f937ce60-6533-4cc9-ba22-489a8e58dde9
 
 **Coming soon!**
 
+
+[^1]: H.P. Breuer and F. Petruccione. The Theory of Open Quantum Systems. Oxford University Press, New York, NY, 2002.
 
