@@ -5,8 +5,8 @@
 <sup>1</sup>Department of Mathematics, <sup>2</sup>Department of Chemistry, University of Michigan
 
 Current deliverables:
-Poster presentation
-*upcoming arxiv preprint*
+-[Poster presentation](oqs-sec-redfield-lindblad-control-poster.pdf)
+-*upcoming arxiv preprint*
 
 ## Contents
 
