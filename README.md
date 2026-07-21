@@ -79,7 +79,7 @@ where $-,+$ indicate ground and excited state indices, respectively. We should n
 
 ## Animations
 
-The Hamiltonian controls $\mathbf{h}(t) = (u_1(t),u_2(t),u_3(t))$ chosen are the following piecewise constant functions,
+The red vector is the Hamiltonian control vector $\mathbf{h}(t) = (u_1(t),u_2(t),u_3(t))$, which for these simulations are the following piecewise constant functions,
 
 $$
 \begin{align*}
@@ -97,12 +97,13 @@ where $\chi_{_A}\colon [0,\infty) \to \{0,1\}$ is the indicator function for the
 
 **Redfield**
 
-[Components (in energy eigenbasis) vs. Time](./animations/component_animation.gif)
+*Components (in energy eigenbasis) vs. Time*
+https://github.com/user-attachments/assets/bdf18292-c2e4-44f3-b2c1-802a15d1643a
 
-Bloch Ball Dynamics
+*Bloch trajectory
+
+### Redfield-Bloch with Purity Chimneys
 https://github.com/user-attachments/assets/f937ce60-6533-4cc9-ba22-489a8e58dde9
-
-
 
 
 
