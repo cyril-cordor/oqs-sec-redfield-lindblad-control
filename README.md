@@ -77,7 +77,7 @@ where $-,+$ indicate ground and excited state indices, respectively. We should n
 
 ## Animations
 
-The red vector is the Hamiltonian control vector $\mathbf{h}(t) = (u_1(t),u_2(t),u_3(t))$, which for these simulations are the following piecewise constant functions,
+The red vector in each of the Bloch animations is the Hamiltonian control vector $\mathbf{h}(t) = (u_1(t),u_2(t),u_3(t))$, which for these simulations are the following piecewise-constant functions,
 
 $$
 \begin{align*}
@@ -87,7 +87,7 @@ $$
 \end{align*}
 $$
 
-where $\chi_{_A}\colon [0,\infty) \to \\{0,1\\}$ is the indicator function on the set $A \subset [0,\infty)$.
+where $\chi_{_A}\colon [0,\infty) \to \\{0,1\\}$ denotes the indicator function on the set $A \subset [0,\infty)$.
 
 ### Steering trajectory in the Bloch ball
 
