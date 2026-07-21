@@ -75,8 +75,6 @@ $$
 
 where $-,+$ indicate ground and excited state indices, respectively. We should note that the Redfield QME is valid in the eigenbasis of the Hamiltonian $\hat{H}_S$. When diagonalized, the Hamiltonian in this case has the form $\hat{H}_S(t) = -\frac{\hslash}{2} \Omega(t) \hat{\sigma}_3$, and so dynamics are centered about the $z$-axis since the Hamiltonian diagonalized is stationary at the $z$-axis. Below, the trajectories are converted back to the standard basis, so that the changes in the Hamiltonian control vector is explicitly seen.
 
-
-
 ## Animations
 
 The red vector is the Hamiltonian control vector $\mathbf{h}(t) = (u_1(t),u_2(t),u_3(t))$, which for these simulations are the following piecewise constant functions,
@@ -89,18 +87,25 @@ $$
 \end{align*}
 $$
 
-where $\chi_{_A}\colon [0,\infty) \to \{0,1\}$ is the indicator function for the set on $A \subset [0,\infty)$.
+where $\chi_{_A}\colon [0,\infty) \to \\{0,1\\}$ is the indicator function on the set $A \subset [0,\infty)$.
 
 ### Steering trajectory in the Bloch ball
 
 **Lindblad**
 
+*Components (in energy eigenbasis) vs. Time*
+
+*Bloch ball trajectory*
+
+
+
 **Redfield**
 
 *Components (in energy eigenbasis) vs. Time*
+
 https://github.com/user-attachments/assets/bdf18292-c2e4-44f3-b2c1-802a15d1643a
 
-*Bloch trajectory
+*Bloch ball trajectory*
 
 ### Redfield-Bloch with Purity Chimneys
 https://github.com/user-attachments/assets/f937ce60-6533-4cc9-ba22-489a8e58dde9
