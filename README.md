@@ -45,7 +45,6 @@ $$
 
 where $\\{\hat{\sigma_j}\\}$ denote the Pauli matrices and $\\{u_j\\}$ are coherent controls. The two Hamiltonian energy levels are time-dependent, $E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}$.
 
-
 For simplicity, we choose the dissipation to be **pure dephasing**, and this leads to the Markovian QMEs for the Bloch ball:
 
 **Lindblad-Bloch QME** with time- and control-independent dissipation
@@ -84,13 +83,13 @@ The Hamiltonian controls $\mathbf{h}(t) = (u_1(t),u_2(t),u_3(t))$ chosen are the
 
 $$
 \begin{align*}
-	u_1(t) &= -8 \chi_{(15,30])(t) + 2 \chi_{(30,45]}(t) - \frac{3}{4} \chi_{(45,\infty)}(t) \\
-	u_2(t) &= -5 \chi_{[0,15))(t) - 5 \chi_{(30,45]}(t) - \frac{3}{4} \chi_{(45,\infty)}(t) \\
+	u_1(t) &= -8 \chi_{(15,30]}(t) + 2 \chi_{(30,45]}(t) - \frac{3}{4} \chi_{(45,\infty)}(t) \\
+	u_2(t) &= -5 \chi_{[0,15)}(t) - 5 \chi_{(30,45]}(t) - \frac{3}{4} \chi_{(45,\infty)}(t) \\
 	u_3(t) &= -10 \chi_{(30,\infty)}(t),
 \end{align*}
 $$
 
-where $\chi_{_A}\colon [0,\infty) \to \{0,1\}$ is the indicator function for the set $A \subset [0,\infty)$.
+where $\chi_{_A}\colon [0,\infty) \to \{0,1\}$ is the indicator function for the set on $A \subset [0,\infty)$.
 
 ### Steering trajectory in the Bloch ball
 
@@ -98,7 +97,7 @@ where $\chi_{_A}\colon [0,\infty) \to \{0,1\}$ is the indicator function for the
 
 **Redfield**
 
-[Components (in energy eigenbasis) vs. Time](animations/component_animation.gif)
+[Components (in energy eigenbasis) vs. Time](./animations/component_animation.gif)
 
 Bloch Ball Dynamics
 https://github.com/user-attachments/assets/f937ce60-6533-4cc9-ba22-489a8e58dde9
