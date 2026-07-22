@@ -77,7 +77,9 @@ where $-,+$ indicate ground and excited state indices, respectively. We should n
 
 ## Animations
 
-The red vector in each of the Bloch animations is the Hamiltonian control vector $\mathbf{h}(t) = (u_1(t),u_2(t),u_3(t))$, which for these simulations are the following piecewise-constant functions,
+**Parameters:**
+
+1. **Hamiltonian.** The red vector in each of the Bloch animations is the Hamiltonian control vector $\mathbf{h}(t) = (u_1(t),u_2(t),u_3(t))$, which for these simulations are the following piecewise-constant functions,
 
 $$
 \begin{align*}
@@ -88,6 +90,10 @@ $$
 $$
 
 where $\chi_{_A}\colon [0,\infty) \to \\{0,1\\}$ denotes the indicator function on the set $A \subset [0,\infty)$.
+
+2. **Static Parameters.** We set the temperature, Boltzmann's constant, and Planck's constant to $T = k_B = \hslash = 1$. The correlation time is $\tau_C = 0.2$.
+
+3. **Initial Condition.** Initial ground and excited population probabilities are 0.3 and 0.7, respectively, with initial coherence $0.2*i$. This corresponds to the Bloch vector **$\mathbf{n}$**$(0)= (0, 0.4, -0.7)$.
 
 ### Steering trajectory in the Bloch ball
 
