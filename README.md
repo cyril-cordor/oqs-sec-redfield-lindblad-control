@@ -104,9 +104,10 @@ where $\chi_{_A}\colon [0,\infty) \to \\{0,1\\}$ denotes the indicator function 
 **Lindblad**
 
 *Components (in energy eigenbasis) vs. Time*
+<video src="https://github.com/user-attachments/assets/b2799eb6-373c-44b4-8e3f-8c0e200a0ed4"></video>
 
 *Bloch ball trajectory*
-
+<video src="https://github.com/user-attachments/assets/8798ce8c-ba9e-458d-b36c-66e439b97f7e"></video>
 
 
 **Redfield**
