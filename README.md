@@ -95,7 +95,7 @@ where $\chi_{_A}\colon [0,\infty) \to \\{0,1\\}$ denotes the indicator function 
 
 2. **Static Parameters.** We set the temperature, Boltzmann's constant, and Planck's constant to $T = k_B = \hslash = 1$. The correlation time is $\tau_C = 0.2$.
 
-3. **Initial Condition.** Initial ground and excited population probabilities are 0.3 and 0.7, respectively, with initial coherence $0.2*i$. This corresponds to the Bloch vector **$\mathbf{n}$**$(0)= (0, 0.4, -0.7)$.
+3. **Initial Condition.** Initial ground and excited population probabilities are 0.3 and 0.7, respectively, with initial coherence $0.2 i$. This corresponds to the Bloch vector **$\mathbf{n}$**$(0)= (0, 0.4, -0.7)$.
 
 4. **Correlation function.** The correlation function $C(\tau)$ is represented by a simple exponential decay function $C(\tau) = e^{-|\tau|/\tau_C}$.
 
