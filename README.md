@@ -51,33 +51,35 @@ For simplicity, we choose the dissipation to be **pure dephasing**, and this lea
 
 $$
 \begin{equation}
-    \frac{d}{dt} \mathbf{n}(t) = \mathbf{h}(t) \times \mathbf{n}(t) + (A - \text{Tr}[A]I_3)\mathbf{n}(t) + \mathbf{b}, \quad A \in \mathbb{R}^{3\times 3}, \mathbf{b} \in \mathbb{R}^3
+    \frac{d}{dt} \mathbf{n}(t) = \mathbf{h}(t) \times \mathbf{n}(t) + (A - \text{Tr}[A]I_3)\mathbf{n}(t) + \mathbf{b}, \quad A \in \text{ℝ}^{3\times 3}, \mathbf{b} \in \text{ℝ}^3
 \end{equation}
 $$
 
 **Redfield-Bloch QME** with control-dependent dissipation
 
 $$
-\begin{equation}
-	\frac{d}{dt} \mathbf{n}(t) = \Omega(t) \begin{pmatrix} n_2 \\\\ -n_1 \\\\ 0 \end{pmatrix} - \frac{1}{2} K_a(t) \begin{pmatrix} n_1 \\\\ n_2 \\\\ 2n_3 \end{pmatrix} - D(t) \begin{pmatrix} n_1 \\\\ n_2 \\\\ 0 \end{pmatrix} + K_m(t) \begin{pmatrix} 0 \\\\ 0 \\\\ 1 \end{pmatrix},
-\end{equation}
-$$
-
-where
-
-$$
 \begin{align}
-	\Omega(t) &:= \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2} \\
-	K_{a,m} &:= (1 \pm e^{-\beta\Omega(t)}) \frac{u_1(t)^2 + u_2(t)^2}{\Omega(t)^2} {\check{\kappa}}_{+-,-+}(\Omega(t)) \\
-	D(t) &:= \frac{u_3(t)^2}{\Omega(t)^2} {\check{\kappa}}_{--,--}(0),
+	\frac{d}{dt} \mathbf{n}(t) &= \Omega(t) \begin{pmatrix} n_2 \\\\ -n_1 \\\\ 0 \end{pmatrix} - \frac{1}{2} K_a(t) \begin{pmatrix} n_1 \\\\ n_2 \\\\ 2n_3 \end{pmatrix} - D(t) \begin{pmatrix} n_1 \\\\ n_2 \\\\ 0 \end{pmatrix} + K_m(t) \begin{pmatrix} 0 \\\\ 0 \\\\ 1 \end{pmatrix} \\
+	&\hspace{5cm} \Omega(t) := \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2} \\
+	&\hspace{5cm} K_{a,m}(t) := (1 \pm e^{-\beta\Omega(t)}) {\check{\kappa}}_{+-,-+}(t,\Omega(t)) \\
+	&\hspace{5cm} D(t) := {\check{\kappa}}_{--,--}(t,0),
 \end{align}
 $$
 
-where $-,+$ indicate ground and excited state indices, respectively. We should note that the Redfield QME is valid in the instantaneous eigenbasis of the Hamiltonian $\hat{H}_S$. When diagonalized, the Hamiltonian in this case has the form $\hat{H}_S(t) = -\frac{\hslash}{2} \Omega(t) \hat{\sigma}_3$, and so dynamics are centered about the $z$-axis since the Hamiltonian diagonalized is stationary at the $z$-axis (see upcoming preprint). Below, the trajectories are converted back to the standard basis, so that the changes in the Hamiltonian control vector is explicitly seen.
+where $-,+$ indicate ground and excited state indices, respectively, and $\beta$ the inverse thermodynamic temperature. The information of the bath's influence on the system is encoded by the Fourier transforms (with respect to the $\tau$ relaxation timescale) of the free-bath correlation functions $\kappa_{jk,\ell m}(t,\tau)$,
+
+$$
+\begin{align}
+	{\check{\kappa}}_{+-,-+}(t,\Omega(t)) &= \frac{u_1(t)^2 + u_2(t)^2}{\Omega(t)^2} \int_\text{ℝ} C(\tau) e^{i\Omega(t)\tau} d\tau \\
+	{\check{\kappa}}_{--,--}(t,0) &= \frac{u_3(t)^2}{\Omega(t)^2} \int_\text{ℝ} C(\tau) d\tau,
+\end{align}
+$$
+
+where $C(\tau)$ represents the bath correlations in the relaxation timescale. We should note that the Redfield QME is valid in the instantaneous eigenbasis of the Hamiltonian $\hat{H}_S$. When diagonalized, the Hamiltonian in this case has the form $\hat{H}_S(t) = -\frac{\hslash}{2} \Omega(t) \hat{\sigma}_3$, and so dynamics are centered about the $z$-axis since the Hamiltonian diagonalized is stationary at the $z$-axis (see upcoming preprint). Below, the trajectories are converted back to the standard basis, so that the changes in the Hamiltonian control vector is explicitly seen.
 
 ## Animations
 
-**Parameters:**
+**Parameters for Numerical Simulations:**
 
 1. **Hamiltonian.** The red vector in each of the Bloch animations is the Hamiltonian control vector $\mathbf{h}(t) = (u_1(t),u_2(t),u_3(t))$, which for these simulations are the following piecewise-constant functions,
 
@@ -94,6 +96,8 @@ where $\chi_{_A}\colon [0,\infty) \to \\{0,1\\}$ denotes the indicator function 
 2. **Static Parameters.** We set the temperature, Boltzmann's constant, and Planck's constant to $T = k_B = \hslash = 1$. The correlation time is $\tau_C = 0.2$.
 
 3. **Initial Condition.** Initial ground and excited population probabilities are 0.3 and 0.7, respectively, with initial coherence $0.2*i$. This corresponds to the Bloch vector **$\mathbf{n}$**$(0)= (0, 0.4, -0.7)$.
+
+4. **Correlation function.** The correlation function $C(\tau)$ is represented by a simple exponential decay function $C(\tau) = e^{-|\tau|/\tau_C}$.
 
 ### Steering trajectory in the Bloch ball
 
