@@ -118,8 +118,7 @@ where $\chi_{_A}\colon [0,\infty) \to \\{0,1\\}$ denotes the indicator function 
 
 *Bloch ball trajectory*
 
-https://github.com/user-attachments/assets/1bee82a5-6c3d-4667-8eaa-e7dd183ced6a
-
+<video src="https://github.com/user-attachments/assets/1bee82a5-6c3d-4667-8eaa-e7dd183ced6a"></video>
 
 
 ### Redfield-Bloch with Purity Chimneys
