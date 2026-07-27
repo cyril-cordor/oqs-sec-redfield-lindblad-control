@@ -33,9 +33,9 @@ The main purpose of this github repository is to display the time-evolving dynam
 
 For a more detailed introduction to the project see the poster presentation (and eventually an upcoming arxiv preprint) or for OQS dynamics in general see [^1].
 
-Recall that an open quantum system is represented by a Hermitian, positive-semidefinite, density operator $\hat{\rho} \in \mathcal{L}(\mathbf{H})$ with unital trace over a Hilbert space $\mathbf{H}$. Let $S$ stand for the *reduced system* or system of interest and $B$ for the environment or heat bath. The density operator of the composite system, system plus bath, lives in the Hilbert space product $\mathbf{H} = \mathbf{H}_S \otimes \mathbf{H}_B$ where $\mathbf{H}_S$ is the quantum state Hilbert space for the system of interest and $\mathbf{H}_B$ is for that of the bath. The dynamics of the composite system are assumed closed, but by taking a partial trace $\text{Tr}_B$ over the bath degrees of freedom, we can derive equations of motion for the reduced system density operator $\hat{\rho}$. The secular Redfield and Lindblad QMEs are Markovian approximations to the OQS dynamics. This approximation is valid for weak system-bath coupling and when the timescale of the bath fluctuations, the correlation time, is significantly shorter than the system relaxation time, *i.e.* $\tau_C \ll \tau_R$.
+Recall that an open quantum system is represented by a Hermitian, positive-semidefinite, density operator $\hat{\rho} \in \mathcal{L}(\textbf{H})$ with unital trace over a Hilbert space $\textbf{H}$. Let $S$ stand for the *reduced system* or system of interest and $B$ for the environment or heat bath. The density operator of the composite system, system plus bath, lives in the Hilbert space product $\textbf{H} = \textbf{H}_S \otimes \textbf{H}_B$ where $\textbf{H}_S$ is the quantum state Hilbert space for the system of interest and $\textbf{H}_B$ is for that of the bath. The dynamics of the composite system are assumed closed, but by taking a partial trace $\text{Tr}_B$ over the bath degrees of freedom, we can derive equations of motion for the reduced system density operator $\hat{\rho}$. The secular Redfield and Lindblad QMEs are Markovian approximations to the OQS dynamics. This approximation is valid for weak system-bath coupling and when the timescale of the bath fluctuations, the correlation time, is significantly shorter than the system relaxation time, *i.e.* $\tau_C \ll \tau_R$.
 
-For a two-level system (2LS) (or qubit), there's a bijective correspondence between the set of density operators $\mathcal{D}(\mathbf{H}_S)$ and the closed unit ball $\text{𝔹} \subset \text{ℝ}^3$, called the **Bloch ball**. A system density operator $\hat{\rho}_S \in \mathcal{L}(\mathbf{H}_S) \cong \text{ℂ}^{2\times 2}$ and system Hamiltonian $\hat{H}_S$ can be written as
+For a two-level system (2LS) (or qubit), there's a bijective correspondence between the set of density operators $\mathcal{D}(\textbf{H}_S)$ and the closed unit ball $\text{𝔹} \subset \text{ℝ}^3$, called the **Bloch ball**. A system density operator $\hat{\rho}_S \in \mathcal{L}(\textbf{H}_S) \cong \text{ℂ}^{2\times 2}$ and system Hamiltonian $\hat{H}_S$ can be written as
 
 $$
 \begin{equation}
@@ -51,7 +51,7 @@ For simplicity, we choose the dissipation to be **pure dephasing**, and this lea
 
 $$
 \begin{equation}
-    \frac{d}{dt} \mathbf{n}(t) = \mathbf{h}(t) \times \mathbf{n}(t) + (A - \text{Tr}[A]I_3)\mathbf{n}(t) + \mathbf{b}, \quad A \in \text{ℝ}^{3\times 3}, \mathbf{b} \in \text{ℝ}^3
+    \frac{d}{dt} \textbf{n}(t) = \textbf{h}(t) \times \textbf{n}(t) + (A - \text{Tr}[A]I_3)\textbf{n}(t) + \textbf{b}, \quad A \in \text{ℝ}^{3\times 3}, \textbf{b} \in \text{ℝ}^3
 \end{equation}
 $$
 
@@ -59,7 +59,7 @@ $$
 
 $$
 \begin{align}
-	\frac{d}{dt} \mathbf{n}(t) &= \Omega(t) \begin{pmatrix} n_2 \\\\ -n_1 \\\\ 0 \end{pmatrix} - \frac{1}{2} K_a(t) \begin{pmatrix} n_1 \\\\ n_2 \\\\ 2n_3 \end{pmatrix} - D(t) \begin{pmatrix} n_1 \\\\ n_2 \\\\ 0 \end{pmatrix} + K_m(t) \begin{pmatrix} 0 \\\\ 0 \\\\ 1 \end{pmatrix} \\
+	\frac{d}{dt} \textbf{n}(t) &= \Omega(t) \begin{pmatrix} n_2 \\\\ -n_1 \\\\ 0 \end{pmatrix} - \frac{1}{2} K_a(t) \begin{pmatrix} n_1 \\\\ n_2 \\\\ 2n_3 \end{pmatrix} - D(t) \begin{pmatrix} n_1 \\\\ n_2 \\\\ 0 \end{pmatrix} + K_m(t) \begin{pmatrix} 0 \\\\ 0 \\\\ 1 \end{pmatrix} \\
 	&\hspace{5cm} \Omega(t) := \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2} \\
 	&\hspace{5cm} K_{a,m}(t) := (1 \pm e^{-\beta\Omega(t)}) {\check{\kappa}}_{+-,-+}(t,\Omega(t)) \\
 	&\hspace{5cm} D(t) := {\check{\kappa}}_{--,--}(t,0),
@@ -81,7 +81,7 @@ where $C(\tau)$ represents the bath correlations in the relaxation timescale. We
 
 **Parameters for Numerical Simulations:**
 
-1. **Hamiltonian.** The red vector in each of the Bloch animations is the Hamiltonian control vector $\mathbf{h}(t) = (u_1(t),u_2(t),u_3(t))$, which for these simulations are the following piecewise-constant functions,
+1. **Hamiltonian.** The red vector in each of the Bloch animations is the Hamiltonian control vector $\textbf{h}(t) = (u_1(t),u_2(t),u_3(t))$, which for these simulations are the following piecewise-constant functions,
 
 $$
 \begin{align*}
@@ -95,7 +95,7 @@ where $\chi_{_A}\colon [0,\infty) \to \\{0,1\\}$ denotes the indicator function 
 
 2. **Static Parameters.** We set the temperature, Boltzmann's constant, and Planck's constant to $T = k_B = \hslash = 1$. The correlation time is $\tau_C = 0.2$.
 
-3. **Initial Condition.** Initial ground and excited population probabilities are 0.3 and 0.7, respectively, with initial coherence $0.2 i$. This corresponds to the Bloch vector **$\mathbf{n}$**$(0)= (0, 0.4, -0.7)$.
+3. **Initial Condition.** Initial ground and excited population probabilities are $\rho_{--}(0) = 0.3$ and $\rho_{++}(0) = 0.7$, respectively, with initial coherence $\rho_{+-}(0) = 0.2 i$. This corresponds to the Bloch vector **n**$(0) = (0, 0.4, -0.4)$.
 
 4. **Correlation function.** The correlation function $C(\tau)$ is represented by a simple exponential decay function $C(\tau) = e^{-|\tau|/\tau_C}$.
 
