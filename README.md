@@ -19,15 +19,15 @@ Current deliverables:
 
 ## Project Statement and Purpose of Repository
 
-This project investigates mathematically the controllability of open quantum dynamics as modeled by the **secular approximation to the Redfield quantum master equation (QME)** with control-dependent decoherence and compare dynamics modeled by the **Lindblad quantum master equation** with constant, control-independent dissipation.
+This project investigates the controllability of open quantum dynamics as modeled by the **secular approximation to the Redfield quantum master equation (QME)** with control-dependent decoherence and compare dynamics modeled by the **Lindblad quantum master equation** with constant, control-independent dissipation. Both equations are of the Lindblad framework, so we call the former the Control-Dependent Dissipation (CDD) master equation and the latter the Time-and-Control-Independent Dissipation (TCID) master equation.
 
-The main purpose of this github repository is to display the time-evolving dynamics as animations of the Lindblad- and Redfield-Bloch dynamics that appear on the poster presentation (and in a future arxiv post). We also give a quick introduction to the parameters of the project.
+The main purpose of this github repository is to display the animations for the dynamics of the TCID and CDD equations. We also give a brief introduction to the parameters of the project.
 
 ## Motivation and Abstract
 
-**Motivation.** Myriad new quantum technologies&mdash;including, among many, *nuclear magnetic resonance and medical spectroscopy*, *quantum sensing*, and *quantum computing*&mdash;drive the need to construct the proper framework modeling dynamics of open quantum systems (OQS). In real scenarios, quantum systems are never closed from the environment, and hence OQS dynamics are not unitary.
+**Motivation.** Myriad new quantum technologies&mdash;including, among many, *nuclear magnetic resonance and medical spectroscopy*, *quantum sensing*, and *quantum computing*&mdash;drive the need to construct the proper framework modeling dynamics of open quantum systems (OQS). In real-world applications, quantum systems are never closed from the environment, and hence OQS dynamics are not unitary.
 
-**Abstract.** The challenge in controlling open quantum systems is that the environment causes *quantum decoherence* which arises from the entanglement of the system with the typically large number of environmental degrees of freedom. The true dynamics of an open quantum system are non-Markovian, but Markovian approximations such as the **Lindblad and Redfield quantum master equations** can be employed if the system is weakly coupled to the environment. Due to ease of use, the Lindblad master equation is a popular choice to model decoherence with the dissipation terms taken to be constant and/or independent of coherent, Hamiltonian controls. However, we argue that dissipation must be *control-dependent*. In particular, for a thermal bath environment, the system Hamiltonian continuously "informs" the bath-induced, irreversible processes, because the system wants to reach its thermal equilibrated state, *i.e.* the Boltzmann density operator $e^{-\beta {\hat{H}}_S}/\text{Tr}[e^{-\beta{\hat{H}_S}}]$, which is dependent on the system Hamiltonian and consequently the coherent controls. In this project, we investigate mathematically the differences in how the secular Redfield QME&mdash;an equivalent formulation to Lindblad-&mdash;with control-dependent dissipation and the Lindblad QME with constant, control-independent dissipation model open system dynamics for the two-level system case. We show that Redfield dynamics are not just thermodynamically more consistent, but reveal that Hamiltonian controls may wield a greater degree of influence on the dynamics than predicted by Lindblad with constant, control-independent dissipation.
+**Abstract.** The challenge in controlling open quantum systems is that the environment causes *quantum decoherence* which arises from the entanglement of the system with the typically large number of environmental degrees of freedom. The true dynamics of an open quantum system are non-Markovian, but Markovian approximations such as the **Lindblad and Redfield quantum master equations** can be employed if the system is weakly coupled to the environment. Due to ease of use, the Lindblad master equation is a popular choice to model decoherence with the dissipation terms taken to be constant and/or independent of coherent, Hamiltonian controls. However, we argue that dissipation must be *control-dependent*. In particular, for a thermal bath environment, the system Hamiltonian continuously "informs" the bath-induced, irreversible processes, because the system wants to reach its thermal equilibrated state, *i.e.* the Boltzmann density operator $e^{-\beta {\hat{H}}_S}/\text{Tr}[e^{-\beta{\hat{H}_S}}]$, which is dependent on the system Hamiltonian and consequently the coherent controls. In this project, we investigate the differences in how the secular Redfield QME&mdash;an equivalent formulation to Lindblad-&mdash;with control-dependent dissipation (CDD) and the Lindblad QME with time-and-control-independent dissipation (TCID) model open system dynamics for the two-level system case. We show that the CDD dynamics are not just thermodynamically more consistent, but reveal that Hamiltonian controls may wield a greater degree of influence on the dynamics than predicted by the TCID control system.
 
 ## Open Quantum System and Bloch Ball Dynamics Refresher
 
@@ -43,19 +43,21 @@ $$
 \end{equation}
 $$
 
-where $\\{\hat{\sigma_j}\\}$ denote the Pauli matrices and $\\{u_j\\}$ are coherent controls. The two Hamiltonian energy levels are time-dependent, $E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}$.
+where $\\{\hat{\sigma_j}\\}$ denote the Pauli matrices and $\\{u_j\\}$ are coherent controls. The two Hamiltonian energy levels are time-dependent,
 
-For simplicity, we choose the dissipation to be **pure dephasing**, and this leads to the Markovian QMEs for the Bloch ball:
+$$E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}.$$
 
-**Lindblad-Bloch QME** with time- and control-independent dissipation
+For simplicity, we choose the dissipation to be **pure dephasing** relative the eigenbasis of the system Hamiltonian $\hat{H}_S$, and this leads to the Markovian QMEs for the Bloch ball:
+
+**Lindblad QME on ??:**
 
 $$
 \begin{equation}
-    \frac{d}{dt} \textbf{n}(t) = \textbf{h}(t) \times \textbf{n}(t) + (A - \text{Tr}[A]I_3)\textbf{n}(t) + \textbf{b}, \quad A \in \text{ℝ}^{3\times 3}, \textbf{b} \in \text{ℝ}^3
+    \frac{d}{dt} \textbf{n}(t) = 2\textbf{h}(t) \times \textbf{n}(t) + (A - \text{Tr}[A]I_3) \textbf{n}(t) + \textbf{b}, \quad A \in \text{ℝ}^{3\times 3}, \textbf{b} \in \text{ℝ}^3
 \end{equation}
 $$
 
-**Redfield-Bloch QME** with control-dependent dissipation
+**Secular Redfield QME on ??:**
 
 $$
 \begin{align}
@@ -66,7 +68,14 @@ $$
 \end{align}
 $$
 
-where $-,+$ indicate ground and excited state indices, respectively, and $\beta$ the inverse thermodynamic temperature. The information of the bath's influence on the system is encoded by the Fourier transforms (with respect to the $\tau$ relaxation timescale) of the free-bath correlation functions $\kappa_{jk,\ell m}(t,\tau)$,
+where $-,+$ indicate ground and excited state indices, respectively, and $\beta$ the inverse thermodynamic temperature. Note that secular Redfield on the Bloch ball can be written in the form of Lindblad on the Bloch ball by defining
+
+$$
+\hbold(t) = -\frac{\hslash}{2} \begin{pmatrix} 0 \\ 0 \\ \Omega(t) \end{pmatrix}\!\!, \,\,
+	A^H(t) = \frac{1}{2\hslash^2} \begin{pmatrix} K_a(t) & 0 & 0 \\ 0 & K_a(t) & 0 \\ 0 & 0 & 2 D(t) \end{pmatrix}\!\!, \,\,
+	\bbold^H(t) = \frac{1}{\hslash^2} \begin{pmatrix} 0 \\ 0 \\ K_m(t) \end{pmatrix}\!\!.$$
+
+The information of the bath's influence on the system is encoded by the Fourier transforms (with respect to the $\tau$ relaxation timescale) of the free-bath correlation functions $\kappa_{jk,\ell m}(t,\tau)$,
 
 $$
 \begin{align}
