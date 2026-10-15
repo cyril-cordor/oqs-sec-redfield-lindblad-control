@@ -71,9 +71,12 @@ $$
 where $-,+$ indicate ground and excited state indices, respectively, and $\beta$ the inverse thermodynamic temperature. Note that secular Redfield on the Bloch ball can be written in the form of Lindblad on the Bloch ball by defining
 
 $$
-\hbold(t) = -\frac{\hslash}{2} \begin{pmatrix} 0 \\ 0 \\ \Omega(t) \end{pmatrix}\!\!, \,\,
+\begin{equation}
+\textbf{h}(t) = -\frac{\hslash}{2} \begin{pmatrix} 0 \\ 0 \\ \Omega(t) \end{pmatrix}\!\!, \,\,
 	A^H(t) = \frac{1}{2\hslash^2} \begin{pmatrix} K_a(t) & 0 & 0 \\ 0 & K_a(t) & 0 \\ 0 & 0 & 2 D(t) \end{pmatrix}\!\!, \,\,
-	\bbold^H(t) = \frac{1}{\hslash^2} \begin{pmatrix} 0 \\ 0 \\ K_m(t) \end{pmatrix}\!\!.$$
+	\textbf{b}(t) = \frac{1}{\hslash^2} \begin{pmatrix} 0 \\ 0 \\ K_m(t) \end{pmatrix}\!\!.
+\end{equation}
+$$
 
 The information of the bath's influence on the system is encoded by the Fourier transforms (with respect to the $\tau$ relaxation timescale) of the free-bath correlation functions $\kappa_{jk,\ell m}(t,\tau)$,
 
