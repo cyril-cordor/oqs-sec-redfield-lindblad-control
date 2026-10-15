@@ -105,7 +105,7 @@ $$
 \begin{gather}
 	u_1(t) = \begin{cases} 5, & 0 \leq t \leq 10 \\\\ 5 - 0.95(t - 10), & 10 < t \leq 15 \\\\ 0.25, & t > 15 \end{cases} \quad
 %
-	u_2(t) = \begin{cases} 0, & 0 \leq t \leq 5 \\\\ -0.8(t - 5), & 5 < t \leq 10 \\\\ -4 + 0.75(t - 10), & 10 < t \leq 15 \\\\ -0.25, & t > 15 \end{cases} \nonumber \\[0.5em]
+	u_2(t) = \begin{cases} 0, & 0 \leq t \leq 5 \\\\ -0.8(t - 5), & 5 < t \leq 10 \\\\ -4 + 0.75(t - 10), & 10 < t \leq 15 \\\\ -0.25, & t > 15 \end{cases} \nonumber \\\\[0.5em]
 %
 	u_3(t) = \begin{cases} 0, & 0 \leq t \leq 5 \\\\ t - 5, & 5 < t \leq 10 \\\\ 5 - 0.9(t - 10), & 10 < t \leq 15 \\\\ 0.5 - 0.15(t - 15), & 15 < t \leq 20 \\\\ -0.25, & t > 20. \end{cases}
 \end{gather}
