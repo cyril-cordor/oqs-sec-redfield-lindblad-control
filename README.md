@@ -95,7 +95,7 @@ where $C(\tau)$ represents the bath correlation function. We should note that th
 
 $$
 \begin{equation}
-	u_1(t) = \begin{cases} 0, & 0 \leq t \leq 10 \\ 18, & 10 < t \leq 20 \\ 6, & 20 < t \leq 30 \\ 0.8, & t > 30 \end{cases}, \quad u_2(t) = \begin{cases} 5, & 0 \leq t \leq 10 \\ 0, & 10 < t \leq 20 \\ 5, & 20 < t \leq 30 \\ 1.6, & t > 30 \end{cases}, \quad u_3(t) = \begin{cases} 0, & 0 \leq t \leq 20 \\ 14, & 20 < t \leq 30 \\ 1, & t > 30. \end{cases}
+	u_1(t) = \begin{cases} 0, & 0 \leq t \leq 10 \\\\ 18, & 10 < t \leq 20 \\\\ 6, & 20 < t \leq 30 \\\\ 0.8, & t > 30 \end{cases}, \quad u_2(t) = \begin{cases} 5, & 0 \leq t \leq 10 \\\\ 0, & 10 < t \leq 20 \\\\ 5, & 20 < t \leq 30 \\\\ 1.6, & t > 30 \end{cases}, \quad u_3(t) = \begin{cases} 0, & 0 \leq t \leq 20 \\\\ 14, & 20 < t \leq 30 \\\\ 1, & t > 30. \end{cases}
 \end{equation}
 $$
 
@@ -103,22 +103,30 @@ For the continuous, piecewise-linear functions, the control functions are:
 
 $$
 \begin{gather}
-	u_1(t) = \begin{cases} 5, & 0 \leq t \leq 10 \\ 5 - 0.95(t - 10), & 10 < t \leq 15 \\ 0.25, & t > 15 \end{cases} \quad
+	u_1(t) = \begin{cases} 5, & 0 \leq t \leq 10 \\\\ 5 - 0.95(t - 10), & 10 < t \leq 15 \\\\ 0.25, & t > 15 \end{cases} \quad
 %
-	u_2(t) = \begin{cases} 0, & 0 \leq t \leq 5 \\ -0.8(t - 5), & 5 < t \leq 10 \\ -4 + 0.75(t - 10), & 10 < t \leq 15 \\ -0.25, & t > 15 \end{cases} \nonumber \\[0.5em]
+	u_2(t) = \begin{cases} 0, & 0 \leq t \leq 5 \\\\ -0.8(t - 5), & 5 < t \leq 10 \\\\ -4 + 0.75(t - 10), & 10 < t \leq 15 \\\\ -0.25, & t > 15 \end{cases} \nonumber \\[0.5em]
 %
-	u_3(t) = \begin{cases} 0, & 0 \leq t \leq 5 \\ t - 5, & 5 < t \leq 10 \\ 5 - 0.9(t - 10), & 10 < t \leq 15 \\ 0.5 - 0.15(t - 15), & 15 < t \leq 20 \\ -0.25, & t > 20. \end{cases}
+	u_3(t) = \begin{cases} 0, & 0 \leq t \leq 5 \\\\ t - 5, & 5 < t \leq 10 \\\\ 5 - 0.9(t - 10), & 10 < t \leq 15 \\\\ 0.5 - 0.15(t - 15), & 15 < t \leq 20 \\\\ -0.25, & t > 20. \end{cases}
 \end{gather}
 $$
 
 For the trajectories with evolving chimneys, the Hamiltonian controls are
 
-$$Blaggedy$$
+$$
+\begin{equation}
+	u_1(t) = \begin{cases} 0, & 0 \leq t \leq 10 \\\\ 8, & 10 < t \leq 20 \\\\  -2, & 20 < t \leq 30 \\\\ 0.75, & t > 30 \end{cases} \quad
+%
+	u_2(t) = \begin{cases} 5, & 0 \leq t \leq 10 \\\\ 0, & 10 < t \leq 20 \\\\ 5, & 20 < t \leq 30 \\\\ 0.75, & t > 30 \end{cases} \quad
+%
+	u_3(t) = \begin{cases} 0, & 0 \leq t \leq 20 \\\\ 10, & t > 20 \end{cases}
+\end{equation}
+$$
 
 
 2. **Static Parameters.** We set the temperature, Boltzmann's constant, and Planck's constant to $T = k_B = \hslash = 1$. The correlation time is $\tau_C = 0.2$.
 
-3. **Initial Condition.** Initial ground and excited population probabilities are $\rho_{--}(0) = 0.3$ and $\rho_{++}(0) = 0.7$, respectively, with initial coherence $\rho_{+-}(0) = 0.2 i$. This corresponds to the Bloch vector **n**$(0) = (0, 0.4, -0.4)$.
+3. **Initial Condition.** Except for the chimney animations, initial ground and excited population levels are $\rho_{--}(0) = 0.3$ and $\rho_{++}(0) = 0.7$, respectively, with initial coherence $\rho_{+-}(0) = 0.2 - 0.2i$. This corresponds to the Bloch vector **n**$(0) = (0.4, -0.4, -0.4)$. For the chimney animations, the initial Bloch vector is **n**$(0) = (0,0.4,-0.4)$.
 
 4. **Correlation function.** The correlation function $C(\tau)$ is represented by a simple exponential decay function $C(\tau) = e^{-|\tau|/\tau_C}$.
 
@@ -131,17 +139,6 @@ $$Blaggedy$$
 
 *Bloch ball trajectory*
 <video src="https://github.com/user-attachments/assets/8798ce8c-ba9e-458d-b36c-66e439b97f7e"></video>
-
-
-**Redfield**
-
-*Components (in energy eigenbasis) vs. Time*
-
-<video src="https://github.com/user-attachments/assets/5ee82cf3-ccbb-4ff9-a156-7340bb9b8497"></video>
-
-*Bloch ball trajectory*
-
-<video src="https://github.com/user-attachments/assets/1bee82a5-6c3d-4667-8eaa-e7dd183ced6a"></video>
 
 
 ### Redfield-Bloch with Purity Chimneys
