@@ -29,13 +29,11 @@ The main purpose of this github repository is to display the animations for the 
 
 **Abstract.** The challenge in controlling open quantum systems is that the environment causes *quantum decoherence* which arises from the entanglement of the system with the typically large number of environmental degrees of freedom. The true dynamics of an open quantum system are non-Markovian, but Markovian approximations such as the **Lindblad and Redfield quantum master equations** can be employed if the system is weakly coupled to the environment. Due to ease of use, the Lindblad master equation is a popular choice to model decoherence with the dissipation terms taken to be constant and/or independent of coherent, Hamiltonian controls. However, we argue that dissipation must be *control-dependent*. In particular, for a thermal bath environment, the system Hamiltonian continuously "informs" the bath-induced, irreversible processes, because the system wants to reach its thermal equilibrated state, *i.e.* the Boltzmann density operator $e^{-\beta {\hat{H}}_S}/\text{Tr}[e^{-\beta{\hat{H}_S}}]$, which is dependent on the system Hamiltonian and consequently the coherent controls. In this project, we investigate the differences in how the secular Redfield QME&mdash;an equivalent formulation to Lindblad-&mdash;with control-dependent dissipation (CDD) and the Lindblad QME with time-and-control-independent dissipation (TCID) model open system dynamics for the two-level system case. We show that the CDD dynamics are not just thermodynamically more consistent, but reveal that Hamiltonian controls may wield a greater degree of influence on the dynamics than predicted by the TCID control system.
 
-## Open Quantum System and Bloch Ball Dynamics Refresher
+## Lindblad and Secular Redfield QMEs on the Bloch Ball
 
 For a more detailed introduction to the project see the poster presentation (and eventually an upcoming arxiv preprint) or for OQS dynamics in general see [^1].
 
-Recall that an open quantum system is represented by a Hermitian, positive-semidefinite, density operator $\hat{\rho} \in \mathcal{L}(\textbf{H})$ with unital trace over a Hilbert space $\textbf{H}$. Let $S$ stand for the *reduced system* or system of interest and $B$ for the environment or heat bath. The density operator of the composite system, system plus bath, lives in the Hilbert space product $\textbf{H} = \textbf{H}_S \otimes \textbf{H}_B$ where $\textbf{H}_S$ is the quantum state Hilbert space for the system of interest and $\textbf{H}_B$ is for that of the bath. The dynamics of the composite system are assumed closed, but by taking a partial trace $\text{Tr}_B$ over the bath degrees of freedom, we can derive equations of motion for the reduced system density operator $\hat{\rho}$. The secular Redfield and Lindblad QMEs are Markovian approximations to the OQS dynamics. This approximation is valid for weak system-bath coupling and when the timescale of the bath fluctuations, the correlation time, is significantly shorter than the system relaxation time, *i.e.* $\tau_C \ll \tau_R$.
-
-For a two-level system (2LS) (or qubit), there's a bijective correspondence between the set of density operators $\mathcal{D}(\textbf{H}_S)$ and the closed unit ball $\text{𝔹} \subset \text{ℝ}^3$, called the **Bloch ball**. A system density operator $\hat{\rho}_S \in \mathcal{L}(\textbf{H}_S) \cong \text{ℂ}^{2\times 2}$ and system Hamiltonian $\hat{H}_S$ can be written as
+For a two-level system (TLS) (or qubit), there's a bijective correspondence between the set of density operators $\mathcal{D}(\textbf{H}_S)$ and the closed unit ball $\text{𝔹} \subset \text{ℝ}^3$, called the **Bloch ball**. A system density operator $\hat{\rho}_S \in \mathcal{L}(\textbf{H}_S) \cong \text{ℂ}^{2\times 2}$ and system Hamiltonian $\hat{H}_S$ can be written as
 
 $$
 \begin{equation}
@@ -43,13 +41,13 @@ $$
 \end{equation}
 $$
 
-where $\\{\hat{\sigma_j}\\}$ denote the Pauli matrices and $\\{u_j\\}$ are coherent controls. The two Hamiltonian energy levels are time-dependent,
+where $\\{\hat{\sigma_j}\\}$ denote the Pauli state operators  and $\\{u_j\\}$ are coherent controls. The two Hamiltonian energy levels are time-dependent,
 
 $$E_{\pm}(t) = \pm \frac{\hslash}{2} \sqrt{u_1(t)^2 + u_2(t)^2 + u_3(t)^2}.$$
 
 For simplicity, we choose the dissipation to be **pure dephasing** relative the eigenbasis of the system Hamiltonian $\hat{H}_S$, and this leads to the Markovian QMEs for the Bloch ball:
 
-**Lindblad QME on ??:**
+**Lindblad QME on $\text{𝔹}$:**
 
 $$
 \begin{equation}
@@ -57,7 +55,7 @@ $$
 \end{equation}
 $$
 
-**Secular Redfield QME on ??:**
+**Secular Redfield QME on $\text{𝔹}$:**
 
 $$
 \begin{align}
@@ -87,23 +85,36 @@ $$
 \end{align}
 $$
 
-where $C(\tau)$ represents the bath correlation function. We should note that the Redfield QME is valid in the instantaneous eigenbasis of the Hamiltonian $\hat{H}_S$. When diagonalized, the Hamiltonian in this case has the form $\hat{H}_S(t) = -\frac{\hslash}{2} \Omega(t) \hat{\sigma}_3$, and so dynamics are centered about the $z$-axis since the Hamiltonian diagonalized is stationary at the $z$-axis (see change-of-basis transformation in upcoming preprint). Below, the trajectories are converted back to the standard basis, so that the changes in the Hamiltonian control vector is explicitly seen.
+where $C(\tau)$ represents the bath correlation function. We should note that the Redfield QME is valid in the instantaneous eigenbasis of the Hamiltonian $\hat{H}_S$. When diagonalized, the Hamiltonian in this case has the form $\hat{H}_S(t) = -\frac{\hslash}{2} \Omega(t) \hat{\sigma}_3$, and so dynamics are centered about the $z$-axis since the Hamiltonian diagonalized is stationary at the $z$-axis (see change-of-basis transformation in upcoming preprint). Below, however, the trajectories are converted back to the standard basis, so that the changes in the Hamiltonian control vector is explicitly seen.
 
 ## Animations
 
 **Parameters for Numerical Simulations:**
 
-1. **Hamiltonian.** The red vector in each of the Bloch animations is the Hamiltonian control vector $\textbf{h}(t) = (u_1(t),u_2(t),u_3(t))$, which for these simulations are the following piecewise-constant functions,
+1. **Hamiltonian.** The red vector in each of the Bloch animations is the Hamiltonian control vector $\textbf{h}(t) = (u_1(t),u_2(t),u_3(t))$. For the simulations with piecewise-constant Hamiltonian, the control functions are:
 
 $$
-\begin{align*}
-	u_1(t) &= -8 \chi_{(15,30]}(t) + 2 \chi_{(30,45]}(t) - \frac{3}{4} \chi_{(45,\infty)}(t) \\
-	u_2(t) &= -5 \chi_{[0,15)}(t) - 5 \chi_{(30,45]}(t) - \frac{3}{4} \chi_{(45,\infty)}(t) \\
-	u_3(t) &= -10 \chi_{(30,\infty)}(t),
-\end{align*}
+\begin{equation}
+	u_1(t) = \begin{cases} 0, & 0 \leq t \leq 10 \\ 18, & 10 < t \leq 20 \\ 6, & 20 < t \leq 30 \\ 0.8, & t > 30 \end{cases}, \quad u_2(t) = \begin{cases} 5, & 0 \leq t \leq 10 \\ 0, & 10 < t \leq 20 \\ 5, & 20 < t \leq 30 \\ 1.6, & t > 30 \end{cases}, \quad u_3(t) = \begin{cases} 0, & 0 \leq t \leq 20 \\ 14, & 20 < t \leq 30 \\ 1, & t > 30. \end{cases}
+\end{equation}
 $$
 
-where $\chi_{_A}\colon [0,\infty) \to \\{0,1\\}$ denotes the indicator function on the set $A \subset [0,\infty)$.
+For the continuous, piecewise-linear functions, the control functions are:
+
+$$
+\begin{gather}
+	u_1(t) = \begin{cases} 5, & 0 \leq t \leq 10 \\ 5 - 0.95(t - 10), & 10 < t \leq 15 \\ 0.25, & t > 15 \end{cases} \quad
+%
+	u_2(t) = \begin{cases} 0, & 0 \leq t \leq 5 \\ -0.8(t - 5), & 5 < t \leq 10 \\ -4 + 0.75(t - 10), & 10 < t \leq 15 \\ -0.25, & t > 15 \end{cases} \nonumber \\[0.5em]
+%
+	u_3(t) = \begin{cases} 0, & 0 \leq t \leq 5 \\ t - 5, & 5 < t \leq 10 \\ 5 - 0.9(t - 10), & 10 < t \leq 15 \\ 0.5 - 0.15(t - 15), & 15 < t \leq 20 \\ -0.25, & t > 20. \end{cases}
+\end{gather}
+$$
+
+For the trajectories with evolving chimneys, the Hamiltonian controls are
+
+$$Blaggedy$$
+
 
 2. **Static Parameters.** We set the temperature, Boltzmann's constant, and Planck's constant to $T = k_B = \hslash = 1$. The correlation time is $\tau_C = 0.2$.
 
