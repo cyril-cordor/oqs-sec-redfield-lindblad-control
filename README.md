@@ -132,8 +132,19 @@ $$
 
 ### TCID (left) vs. CDD (right) system trajectories in the Bloch ball
 
-<video src="animations/TCID_vs_CDD-pwconst-init.mp4"> </video>
+#### Trajectories under a piecewise-constant Hamiltonian
 
+Initial Lindblad Dissipator (left) vs. Secular Redfield (right)
+
+
+Average Lindblad Dissipator (left) vs. Secular Redfield (right)
+
+#### Trajectories under a continuous, piecewise-linear Hamiltonian
+
+Initial Lindblad Dissipator (left) vs. Secular Redfield (right)
+https://github.com/user-attachments/assets/1497f81a-79ed-4c69-86cc-8a27b16717b9
+
+Average Lindblad Dissipator (left) vs. Secular Redfield (right)
 
 
 
