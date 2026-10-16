@@ -124,17 +124,9 @@ $$
 $$
 
 2. **Constant, Control-Independent Dissipators.** For the TCID dynamics, we choose 3 different types of time-and-control-independent dissipators. If $A(t)$ and $\textbf{b}(t)$ represent the decoherent terms of the CDD equation, then for the TCID equation, we use the following constant Lindblad-type dissipators:
-
-	i. the initial dissipator, $A_{\text{init}} = A(0)$, $\textbf{b}_{\text{init}} = \textbf{b}(0)$;
-	ii. the average dissipator,
-
-$$
-	A_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} A(t) \dt, \quad \textbf{b}_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} \textbf{b}(t) \dt,
-$$
-
-where $\tau_f$ is the final time step of the simulation;
-
-	iii. and the ending dissipator, $A_{\text{end}} = A(\tau_f)$, $\textbf{b}_{\text{end}} = \textbf{b}(\tau_f)$.
+	<ol type="i">
+	<li> the initial dissipator, $A_{\text{init}} = A(0)$, $\textbf{b}_{\text{init}} = \textbf{b}(0)$;</li>
+	<li> the average dissipator, $A_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} A(t) dt$, $\textbf{b}_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} \textbf{b}(t) dt$, where $\tau_f$ is the final time step of the simulation;
  
 3. **Static Parameters.** We set the temperature, Boltzmann's constant, and Planck's constant to $T = k_B = \hslash = 1$. The correlation time is $\tau_C = 0.2$.
 
@@ -152,6 +144,9 @@ https://github.com/user-attachments/assets/eda4aafb-dd73-46e0-b2af-45f3f61007fa
 
 Average Lindblad Dissipator (left) vs. Secular Redfield (right)
 
+https://github.com/user-attachments/assets/2e29074f-d021-45bf-a98d-ffcdb45a55fb
+
+
 #### Trajectories under a continuous, piecewise-linear Hamiltonian
 
 Initial Lindblad Dissipator (left) vs. Secular Redfield (right)
@@ -160,7 +155,7 @@ https://github.com/user-attachments/assets/1497f81a-79ed-4c69-86cc-8a27b16717b9
 
 Average Lindblad Dissipator (left) vs. Secular Redfield (right)
 
-
+https://github.com/user-attachments/assets/bceb3947-ea81-46bf-ae38-a4d522a8d0b5
 
 ### CDD system trajectories with purity-rising chimney regions
 
