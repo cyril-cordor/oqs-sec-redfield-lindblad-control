@@ -70,9 +70,9 @@ where $-,+$ indicate ground and excited state indices, respectively, and $\beta$
 
 $$
 \begin{equation}
-\textbf{h}(t) = -\frac{\hslash}{2} \begin{pmatrix} 0 \\ 0 \\ \Omega(t) \end{pmatrix}\!\!, \,\,
-	A^H(t) = \frac{1}{2\hslash^2} \begin{pmatrix} K_a(t) & 0 & 0 \\ 0 & K_a(t) & 0 \\ 0 & 0 & 2 D(t) \end{pmatrix}\!\!, \,\,
-	\textbf{b}(t) = \frac{1}{\hslash^2} \begin{pmatrix} 0 \\ 0 \\ K_m(t) \end{pmatrix}\!\!.
+\textbf{h}(t) = -\frac{\hslash}{2} \begin{pmatrix} 0 \\\\ 0 \\\\ \Omega(t) \end{pmatrix}, \quad
+	A^H(t) = \frac{1}{2\hslash^2} \begin{pmatrix} K_a(t) & 0 & 0 \\\\ 0 & K_a(t) & 0 \\\\ 0 & 0 & 2 D(t) \end{pmatrix}, \quad
+	\textbf{b}(t) = \frac{1}{\hslash^2} \begin{pmatrix} 0 \\\\ 0 \\\\ K_m(t) \end{pmatrix}.
 \end{equation}
 $$
 
@@ -130,18 +130,13 @@ $$
 
 4. **Correlation function.** The correlation function $C(\tau)$ is represented by a simple exponential decay function $C(\tau) = e^{-|\tau|/\tau_C}$.
 
-### Steering trajectory in the Bloch ball
-
-**Lindblad**
-
-*Components (in energy eigenbasis) vs. Time*
-<video src="https://github.com/user-attachments/assets/b2799eb6-373c-44b4-8e3f-8c0e200a0ed4"></video>
-
-*Bloch ball trajectory*
-<video src="https://github.com/user-attachments/assets/8798ce8c-ba9e-458d-b36c-66e439b97f7e"></video>
+### TCID vs. CDD system trajectories in the Bloch ball
 
 
-### Redfield-Bloch with Purity Chimneys
+
+
+### CDD system trajectories with purity-rising chimney regions
+
 https://github.com/user-attachments/assets/f937ce60-6533-4cc9-ba22-489a8e58dde9
 
 
