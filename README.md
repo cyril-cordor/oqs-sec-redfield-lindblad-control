@@ -126,7 +126,8 @@ $$
 2. **Constant, Control-Independent Dissipators.** For the TCID dynamics, we choose 3 different types of time-and-control-independent dissipators. If $A(t)$ and $\textbf{b}(t)$ represent the decoherent terms of the CDD equation, then for the TCID equation, we use the following constant Lindblad-type dissipators:
 	<ol type="i">
 	<li> the initial dissipator, $A_{\text{init}} = A(0)$, $\textbf{b}_{\text{init}} = \textbf{b}(0)$;</li>
-	<li> the average dissipator, $A_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} A(t) dt$, $\textbf{b}_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} \textbf{b}(t) dt$, where $\tau_f$ is the final time step of the simulation;
+	<li> the average dissipator, $A_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} A(t) dt$, $\textbf{b}_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} \textbf{b}(t) dt$, where $\tau_f$ is the final time step of the simulation.
+</ol>
  
 3. **Static Parameters.** We set the temperature, Boltzmann's constant, and Planck's constant to $T = k_B = \hslash = 1$. The correlation time is $\tau_C = 0.2$.
 
