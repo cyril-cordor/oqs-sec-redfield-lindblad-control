@@ -130,7 +130,9 @@ $$
 
 4. **Correlation function.** The correlation function $C(\tau)$ is represented by a simple exponential decay function $C(\tau) = e^{-|\tau|/\tau_C}$.
 
-### TCID vs. CDD system trajectories in the Bloch ball
+### TCID (left) vs. CDD (right) system trajectories in the Bloch ball
+
+<video src="animations/TCID_vs_CDD-pwconst-init.mp4"> </video>
 
 
 
