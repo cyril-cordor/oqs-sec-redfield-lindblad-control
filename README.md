@@ -95,7 +95,7 @@ where $C(\tau)$ represents the bath correlation function. We should note that th
 
 $$
 \begin{equation}
-	u_1(t) = \begin{cases} 0, & 0 \leq t \leq 10 \\\\ 18, & 10 < t \leq 20 \\\\ 6, & 20 < t \leq 30 \\\\ 0.8, & t > 30 \end{cases}, \quad u_2(t) = \begin{cases} 5, & 0 \leq t \leq 10 \\\\ 0, & 10 < t \leq 20 \\\\ 5, & 20 < t \leq 30 \\\\ 1.6, & t > 30 \end{cases}, \quad u_3(t) = \begin{cases} 0, & 0 \leq t \leq 20 \\\\ 14, & 20 < t \leq 30 \\\\ 1, & t > 30. \end{cases}
+	u_1(t) = \begin{cases} 0, & 0 \leq t \leq 10 \\\\ 18, & 10 < t \leq 20 \\\\ 6, & 20 < t \leq 30 \\\\ 0.8, & t > 30 \end{cases} \quad u_2(t) = \begin{cases} 5, & 0 \leq t \leq 10 \\\\ 0, & 10 < t \leq 20 \\\\ 5, & 20 < t \leq 30 \\\\ 1.6, & t > 30 \end{cases} \quad u_3(t) = \begin{cases} 0, & 0 \leq t \leq 20 \\\\ 14, & 20 < t \leq 30 \\\\ 1, & t > 30. \end{cases}
 \end{equation}
 $$
 
@@ -137,9 +137,9 @@ $$ where $\tau_f$ is the final time step of the simulation.
 5. **Correlation function.** The correlation function $C(\tau)$ is represented by a simple exponential decay function $C(\tau) = e^{-|\tau|/\tau_C}$.
 
 
-### TCID (left) vs. CDD (right) system trajectories in the Bloch ball
+**TCID (left) vs. CDD (right) system trajectories in the Bloch ball**
 
-#### Trajectories under a piecewise-constant Hamiltonian
+*Trajectories under a piecewise-constant Hamiltonian*
 
 Initial Lindblad Dissipator (left) vs. Secular Redfield (right)
 
@@ -150,7 +150,7 @@ Average Lindblad Dissipator (left) vs. Secular Redfield (right)
 https://github.com/user-attachments/assets/2e29074f-d021-45bf-a98d-ffcdb45a55fb
 
 
-#### Trajectories under a continuous, piecewise-linear Hamiltonian
+*Trajectories under a continuous, piecewise-linear Hamiltonian*
 
 Initial Lindblad Dissipator (left) vs. Secular Redfield (right)
 
@@ -160,7 +160,7 @@ Average Lindblad Dissipator (left) vs. Secular Redfield (right)
 
 https://github.com/user-attachments/assets/bceb3947-ea81-46bf-ae38-a4d522a8d0b5
 
-### CDD system trajectories with purity-rising chimney regions
+**CDD system trajectories with purity-rising chimney regions**
 
 https://github.com/user-attachments/assets/f937ce60-6533-4cc9-ba22-489a8e58dde9
 
