@@ -91,8 +91,7 @@ where $C(\tau)$ represents the bath correlation function. We should note that th
 
 **Setup and Parameters for Numerical Simulations:**
 
-<ol type="1">
-<li> **Hamiltonian.** The red vector in each of the Bloch animations is the Hamiltonian control vector $\textbf{h}(t) = (u_1(t),u_2(t),u_3(t))$. For the simulations with piecewise-constant Hamiltonian, the control functions are:
+1. **Hamiltonian.** The red vector in each of the Bloch animations is the Hamiltonian control vector $\textbf{h}(t) = (u_1(t),u_2(t),u_3(t))$. For the simulations with piecewise-constant Hamiltonian, the control functions are:
 
 $$
 \begin{equation}
@@ -123,26 +122,20 @@ $$
 	u_3(t) = \begin{cases} 0, & 0 \leq t \leq 20 \\\\ 10, & t > 20 \end{cases}
 \end{equation}
 $$
-</li>
 
-<li> **Constant, Control-Independent Dissipators.** For the TCID dynamics, we display 2 different types of time-and-control-independent dissipators. If $A(t)$ and $\textbf{b}(t)$ represent the time-dependent decoherent terms of the CDD equation, then for the TCID equation, we use the following constant Lindblad-type dissipators:
+2. **Constant, Control-Independent Dissipators.** For the TCID dynamics, we display 2 different types of time-and-control-independent dissipators. If $A(t)$ and $\textbf{b}(t)$ represent the time-dependent decoherent terms of the CDD equation, then for the TCID equation, we use the following constant Lindblad-type dissipators:
 
-<ol type="i">
-	<li> the initial dissipator, $A_{\text{init}} = A(0)$, $\textbf{b}_{\text{init}} = \textbf{b}(0)$;</li>
-	<li> and the average dissipator,
-
-$$A_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} A(t) dt, \quad \textbf{b}_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} \textbf{b}(t) dt,
-$$
-
-	where $\tau_f$ is the final time step of the simulation.
-</ol>
+	- the initial dissipator, $A_{\text{init}} = A(0)$, $\textbf{b}_{\text{init}} = \textbf{b}(0)$;</li>
+	- and the average dissipator, $$A_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} A(t) dt, \quad \textbf{b}_{\text{avg}} = \frac{1}{\tau_f} \int_0^{\tau_f} \textbf{b}(t) dt,
+$$ where $\tau_f$ is the final time step of the simulation.
 
  
-<li> **Static Parameters.** We set the temperature, Boltzmann's constant, and Planck's constant to $T = k_B = \hslash = 1$. The correlation time is $\tau_C = 0.2$.</li>
+3. **Static Parameters.** We set the temperature, Boltzmann's constant, and Planck's constant to $T = k_B = \hslash = 1$. The correlation time is $\tau_C = 0.2$.
 
-<li> **Initial Condition.** Except for the chimney animations, initial ground and excited population levels are $\rho_{--}(0) = 0.3$ and $\rho_{++}(0) = 0.7$, respectively, with initial coherence $\rho_{+-}(0) = 0.2 - 0.2i$. This corresponds to the Bloch vector **n**$(0) = (0.4, -0.4, -0.4)$. For the chimney animations, the initial Bloch vector is **n**$(0) = (0,0.4,-0.4)$</li>
+4. **Initial Condition.** Except for the chimney animations, initial ground and excited population levels are $\rho_{--}(0) = 0.3$ and $\rho_{++}(0) = 0.7$, respectively, with initial coherence $\rho_{+-}(0) = 0.2 - 0.2i$. This corresponds to the Bloch vector **n**$(0) = (0.4, -0.4, -0.4)$. For the chimney animations, the initial Bloch vector is **n**$(0) = (0,0.4,-0.4)$.
 
-<li> **Correlation function.** The correlation function $C(\tau)$ is represented by a simple exponential decay function $C(\tau) = e^{-|\tau|/\tau_C}$.</li>
+5. **Correlation function.** The correlation function $C(\tau)$ is represented by a simple exponential decay function $C(\tau) = e^{-|\tau|/\tau_C}$.
+
 
 ### TCID (left) vs. CDD (right) system trajectories in the Bloch ball
 
