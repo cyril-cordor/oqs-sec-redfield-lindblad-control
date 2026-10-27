@@ -145,6 +145,7 @@ Initial Lindblad Dissipator (left) vs. Secular Redfield (right)
 
 https://github.com/user-attachments/assets/eda4aafb-dd73-46e0-b2af-45f3f61007fa
 
+
 Average Lindblad Dissipator (left) vs. Secular Redfield (right)
 
 https://github.com/user-attachments/assets/2e29074f-d021-45bf-a98d-ffcdb45a55fb
@@ -154,7 +155,8 @@ https://github.com/user-attachments/assets/2e29074f-d021-45bf-a98d-ffcdb45a55fb
 
 Initial Lindblad Dissipator (left) vs. Secular Redfield (right)
 
-https://github.com/user-attachments/assets/1497f81a-79ed-4c69-86cc-8a27b16717b9
+https://github.com/user-attachments/assets/d1bff96d-c479-4b36-827f-aed5d1981a2c
+
 
 Average Lindblad Dissipator (left) vs. Secular Redfield (right)
 
